@@ -1,5 +1,4 @@
 # XBPayment
-
 [![CI Status](http://img.shields.io/travis/eugenenguyen/XBPayment.svg?style=flat)](https://travis-ci.org/eugenenguyen/XBPayment)
 [![Version](https://img.shields.io/cocoapods/v/XBPayment.svg?style=flat)](http://cocoadocs.org/docsets/XBPayment)
 [![License](https://img.shields.io/cocoapods/l/XBPayment.svg?style=flat)](http://cocoadocs.org/docsets/XBPayment)

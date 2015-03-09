@@ -1,0 +1,2517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0047D39EEB7E78F6640F6859 /* XBPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = B5494F5A54A9F44267BEBE83 /* XBPayment.h */; };
+		00A6EC0D66B5B12F15065BF1 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 485237A0A58CEBA6EBDC12E4 /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		00E5DC7E7A65C93A4AF27695 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE307BC9961D96C8AC2A79 /* EXPMatchers+endWith.m */; };
+		01D79AFF83C47554F678B07A /* Pods-XBPayment-XBPayment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D102406F7C10623E87D950B6 /* Pods-XBPayment-XBPayment-dummy.m */; };
+		02854F8ECBF12C0212B31C01 /* Pods-Tests-FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36898BF49306C9D6B4E5B10C /* Pods-Tests-FBSnapshotTestCase-dummy.m */; };
+		051EDB4150B97D2D8FB96BB8 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D39B5B778A2FA82B5D0C4BBE /* UIAlertView+AFNetworking.h */; };
+		056B0598F1F114DF4B6EDEF1 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 321E0F8C42D273B952390AA3 /* UIActivityIndicatorView+AFNetworking.h */; };
+		064BC6CF7DBB16D5B1C3A119 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397E0891B469E9EC25E1ED0 /* EXPDoubleTuple.m */; };
+		072C4923941DDB26684BEA9D /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C964E831C29CB75BFE9E6E /* NSValue+Expecta.m */; };
+		08B965031CC641E631F49943 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA03AC1AFEB1EF9FD0E79E6 /* EXPExpect.m */; };
+		095777F9B21E9FC7D723A611 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D531F13A8CED87895C9EA /* Security.framework */; };
+		0EAFEE110FC6990C98C47683 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D06E94EF2D5ED328D0415B17 /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		113DA790F71FE71B9D99B845 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6472A1BF7283397509ACE507 /* XCTest.framework */; };
+		1161A969E290BE3AFE0478D0 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 618CC66B0FE293A79E8A1F2D /* EXPMatchers+beFalsy.h */; };
+		13D3DD5FB6C6B4F735F88D18 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6472A1BF7283397509ACE507 /* XCTest.framework */; };
+		16282B359A39C8BC3DA19CD2 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DD6757D3CE8B47A124166E /* EXPMatchers+haveCountOf.h */; };
+		16409E737A1E4FA4AC1B970F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 321E0F8C42D273B952390AA3 /* UIActivityIndicatorView+AFNetworking.h */; };
+		18B1CF3DE153F888399CD504 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B4AC75D8896CAFF41E6761 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1A3000BB449C976A7231758A /* XBPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1919ACEDBBBCF8344DB908F2 /* XBPayment.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1F2E77BF49952E6CFBD728F5 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2790CFBA50527BB773637B /* SPTExample.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		204A4258C4E9FB042E16E6AC /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = D250D2F9357B5777DDFCE728 /* EXPMatchers+beIdenticalTo.m */; };
+		227918644AE7DCF083654143 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2989E3750C0B2BB1D2C401 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		24C97B9A651120E8C52F50BE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9214D79628307A1A38B3B663 /* MobileCoreServices.framework */; };
+		24D4B96700A9DE3BBB13E6C7 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 624EF6FCDB939704C9189E4E /* EXPMatchers+contain.m */; };
+		251BE6ECAE852179C937DC5E /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = C27A5FEF4800D1B3850A6302 /* EXPMatchers+beLessThan.h */; };
+		2699305A6C529DDDA36E4DB5 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = BB7AF45A08D750DC03A5F17C /* SPTTestSuite.h */; };
+		298C25B5148EFBE40DD514A8 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1237EFA145DE194D57E7FA1D /* EXPMatchers+equal.m */; };
+		2A266397733177DFA5FA2E3B /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 106535C1BAD1EB2437BE434A /* FBSnapshotTestController.h */; };
+		2B73BCFA8E32705CD9304FD2 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C95AD8DCC16BF903267FA3F3 /* AFURLConnectionOperation.h */; };
+		2C0DD71D3D40CEFC53788918 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A199C7BED26110FA12DC438 /* EXPMatchers+beGreaterThanOrEqualTo.m */; };
+		2CF00A758EB9BF6FD90C1BEC /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 627DF5DF555915102A03CB83 /* SpectaUtility.h */; };
+		2D494B1C35682392870BC84E /* Pods-XBPayment-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D3FBCB97E9BA31F1C6B07 /* Pods-XBPayment-AFNetworking-dummy.m */; };
+		2D96698246D914BC66B25AE9 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = B3375F043F4603774AB4024A /* EXPMatchers+beLessThan.m */; };
+		2E61B54BEAF27A8ADCE34B7C /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = A42A2B629C8165D60CFFF525 /* EXPMatchers+beKindOf.h */; };
+		317B2A3D4D9D29F6CDC0F1B5 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = C017F12DC556BF13A13F6F44 /* EXPMatchers+beGreaterThanOrEqualTo.h */; };
+		31A413FA1F44D49F3EF53FBA /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D8CE583C0F590BB652ADF80 /* NSValue+Expecta.h */; };
+		343E43006A7653D755E06CC2 /* XBPaypalItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 503E0FAE69FFDDDC1D3141DD /* XBPaypalItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		3578017D1EA308A38C1AC378 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A8F36BE17C17BD33B6BBA7 /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		35FB7BEB7992A46AD207E67F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DD98EB1C775980744C257FFB /* AFNetworking.h */; };
+		36128BD55A7AFA6727BEA931 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B831F50486F0F8BA70206EA1 /* EXPMatchers+postNotification.m */; };
+		37D222FAFF7A41B4BC8522AD /* EXPMatchers+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 28211654E4850DB5B7157C65 /* EXPMatchers+FBSnapshotTest.h */; };
+		37E10ED3DD5C0A8E970937F4 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708FA98BF4761A70F50DA6B /* EXPMatchers+beInTheRangeOf.m */; };
+		38D112D661E2CC7099914BF8 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D6848FCD956A09750EAF1F /* EXPMatchers+haveCountOf.m */; };
+		39538CD118C5ABDAF0907C21 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F89A04E88C5E62C767658500 /* ExpectaSupport.m */; };
+		3B45D3D0D8D437B7DADACD6B /* Pods-Tests-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F272D6C120FFD8CDB9242CCB /* Pods-Tests-AFNetworking-dummy.m */; };
+		3BE64016ED9A292002E130C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		3DA4584EC585280855B48BD6 /* Pods-Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E6698282A95CD25EC5E6C /* Pods-Tests-Specta-dummy.m */; };
+		3ED0E1311626FB145BEE3039 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC37EB804C48F13A96A668D /* EXPMatchers+beSupersetOf.m */; };
+		3F49DB7724A43960EE789C26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		3F6939161E1D04534E0790C2 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA8C9B8F414CA014889D49A /* ExpectaObject.h */; };
+		3FB52E62962CC21DEC74A675 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6472A1BF7283397509ACE507 /* XCTest.framework */; };
+		4235FFE0D0C354AC354F9C52 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5C27FC3ED2D393A670FBE5 /* EXPMatchers+conformTo.h */; };
+		42C5E35CC371C00C115D9532 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = EE725A92A86A23E23E8F8EB0 /* EXPMatchers+beLessThanOrEqualTo.h */; };
+		42CC7393F51FB43BE9243AE7 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7304FDCE0239595DE7C187 /* EXPMatchers+beNil.m */; };
+		445E30FEF531729EFD6C16E6 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3168E8084B40140260089567 /* AFHTTPSessionManager.h */; };
+		455A61F9A37BF532EBF1F856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		476CC8333ECD192094FDB81A /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 183A4AAC39FAD67BA4504B87 /* SPTCallSite.h */; };
+		4846D70B0DEB05476A1C31AE /* Pods-Tests-Expecta+Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C74CCB70DE428CFE7F3D2FE /* Pods-Tests-Expecta+Snapshots-dummy.m */; };
+		48BBDBDEE33E50DB106CE8AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		48E20206FFEEF13A8ECC4A54 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257D3E87EA87623B09C48126 /* SystemConfiguration.framework */; };
+		49C221F09C76732AA68D5463 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EA759312F91BAF0752C1E210 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4B011C1A0D3A05266AEDBAFE /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 118A5B46065960F1827B9B1E /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4BACEFDBF6AB408FD4A7DF86 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 428AF07E6B3AE012C1A1ED50 /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4C316CA5E0393E445E0E9D35 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B87F88227075BE3A2F914193 /* EXPMatchers+beKindOf.m */; };
+		4C525F56A87C7A513B56D25E /* XBPaypalExpressCheckout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3456F431D02C50D932EB44E5 /* XBPaypalExpressCheckout.h */; };
+		4D3DDDD8F65E3C0FCC654307 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E497DD09893EFA516046E6D /* Specta.h */; };
+		4D9B2EE9B4BAD87BA21E0F87 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = D94C44157D9A9DB2D4979EC3 /* FBSnapshotTestCase.h */; };
+		4E16FDD50435FC029F0F51F8 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 522FC851E11065624414C115 /* UIWebView+AFNetworking.h */; };
+		4E60DEA0547009E6EAABCAD2 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B187B9DB9D5ADDB79383F0 /* AFHTTPRequestOperation.h */; };
+		4F3D64DA5F61FEC6DDA9DADC /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 28416982EAFF47176F3A58BF /* AFSecurityPolicy.h */; };
+		4F4AF397FCB6556EE86A93EA /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D39B5B778A2FA82B5D0C4BBE /* UIAlertView+AFNetworking.h */; };
+		503D2E57067EA7F8B33F2933 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 044D0205EF4BC7DA8A289BB4 /* EXPBlockDefinedMatcher.h */; };
+		5205D0CADD7372C3003F6421 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D01ADF32C0A68A9275EB12B /* EXPMatchers+conformTo.m */; };
+		52627BCF85AA21E6F241D66A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614FD10647B2E36DE07F4B3 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		52B0A23B5B78C719108E0DD3 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7593A95B48FD3025F5A624 /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5324038CA719106224812BD7 /* XBPWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C185687E637ADC2C109C9F /* XBPWebViewViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		544FC52713D7DDB60CC0FD5F /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 702E05DB13590EFBB4BA2785 /* EXPMatchers+raiseWithReason.h */; };
+		55B931D0A570BA7D5B6D1E3D /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EA759312F91BAF0752C1E210 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		58068FC09E954ED0AB3847E7 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D06E94EF2D5ED328D0415B17 /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		580B74D5135BC1732A1795AD /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EF9A209F353634BC198861 /* EXPBlockDefinedMatcher.m */; };
+		595C7FBB2FD0A335828BC58B /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 522FC851E11065624414C115 /* UIWebView+AFNetworking.h */; };
+		5B0ADAB7FE17D6A58D1D161A /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 1594ECB0394DDD693F9DCDB8 /* EXPFloatTuple.h */; };
+		5C61101EE6ED7A9BE8B3E377 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 28416982EAFF47176F3A58BF /* AFSecurityPolicy.h */; };
+		5E3712BEADF61A68AE5EA646 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = B42582B67662184288A8D690 /* UIImage+Compare.h */; };
+		5F0040B836B99F1E79E3A404 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E91696C04C34A95A1452B5 /* EXPMatchers+beGreaterThan.m */; };
+		5F934E44FCC0BFD17B71DA1F /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9872896B3F95CF4F744FFADD /* EXPUnsupportedObject.h */; };
+		609646B5EBFAC7EC1F32ABEF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9214D79628307A1A38B3B663 /* MobileCoreServices.framework */; };
+		61FB94886F9B3143DB64BB35 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 05895E71E902E06FDB4F3AE6 /* SPTCompiledExample.h */; };
+		632AD263861D23A179271391 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F91FCE4A88A02327B5D6E050 /* UIImageView+AFNetworking.h */; };
+		6382843F4D3B671D4AEFE694 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 250EC5D777D20857CE84B1E8 /* EXPMatchers+beginWith.m */; };
+		63CFE280E12BE97B1D205B5A /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = E75BD65E0C2F43A101144E99 /* EXPMatchers+beNil.h */; };
+		6476F074ACAA1F86510F5054 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C751ECCE1A320134797F7C /* UIAlertView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		653EC46FA48B93BC8D41B0BD /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFECF1B4335A54FCCC01BB6 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6615E0FE5023426D5F9160BF /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD28B3C859C7F37EB136DAC /* EXPMatcherHelpers.m */; };
+		66EA43579B4CAAE16E9E5AB4 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B466D5090A4A0168E080D39 /* ExpectaSupport.h */; };
+		680E1382AE119D9B2FE4EB4D /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 72971AC868293ECEF950DDBA /* EXPMatchers+beGreaterThan.h */; };
+		68CE01FDDAEF9ECD009EAEAC /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BAE24CFB897BFB5BE22485 /* UIWebView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6ACE4F49AC5FC16157CE64E8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B93292F43E806A79F04F /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6D2BBE3B3FC77A74DDB8FCC3 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D41B9FEF1CD79E5402F915A2 /* UIKit+AFNetworking.h */; };
+		6E02317848C37B3AA59913E4 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = C80A6083DE10F55CE162E078 /* NSObject+Expecta.h */; };
+		6F53667BC25E27C9D00F1633 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2989E3750C0B2BB1D2C401 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7046FA19669A2014ABB270CA /* Pods-Tests-XBPayment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 058097BC73DF5951E3E8D611 /* Pods-Tests-XBPayment-dummy.m */; };
+		7257846ADD610D63B62265B3 /* Pods-Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 273A5E5470ADF5A6ACC9C17B /* Pods-Tests-Expecta-dummy.m */; };
+		725889B7FAF6412AFC866F06 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7950DD27C762C0C481506C /* EXPMatchers+equal.h */; };
+		739D18308DBD641EAB2817B2 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4287C93237C704DD3F9C02A1 /* EXPMatchers.h */; };
+		747D390ADC4CBCEA61C8B3B2 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F2DED85803F114649515A6 /* UIProgressView+AFNetworking.h */; };
+		7538E87E1FC9CB77444976BF /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 745C07C531A0C6C417A3DD2A /* UIButton+AFNetworking.h */; };
+		77199EE7D063034832B0A8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		77387724B287FFA75EF3E749 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = B9546E5FFE91BEEDBF86E39B /* EXPMatchers+raise.h */; };
+		78AE495FEE12793FC02D13DE /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = B02EE39865D8D5C2D9C0C872 /* Expecta.h */; };
+		7A4DC5773CADB2120F551450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		7ACDFC20B7090F80F8BF854E /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C3EE366B9CFF11C72D0E35 /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7AE0D892575A088134891EB9 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E700DD36C7A66F10106CFA6 /* UIRefreshControl+AFNetworking.h */; };
+		7E5588968C8D7F1FE1CACB0E /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7770ABABB02E0B3D8C9433 /* EXPMatchers+postNotification.h */; };
+		7E5662032142320CFE71AE0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C2DA590423FDC71CBC8508 /* CoreGraphics.framework */; };
+		7E91B67A4115740B6BF3509B /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A4F40BB0A2ABEDF1F1B25E /* SPTExample.h */; };
+		7EC38813CC5A6E3AE4C554D4 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E700DD36C7A66F10106CFA6 /* UIRefreshControl+AFNetworking.h */; };
+		812C59DD20A47DE49BA51A8A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DD34A5931D0FBA04183BD /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		821CCD65F285063F8B52E769 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93447FD0027E86B9027199EB /* EXPMatchers+beTruthy.m */; };
+		83BB23B9D1CD68CBF9601494 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD545203161DF77C520B26F /* UIImage+Diff.h */; };
+		856D780E4D028877AD602590 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F645FFF018259006A72BC9C /* EXPMatchers+raise.m */; };
+		85F95E3692C7545C76288818 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6472A1BF7283397509ACE507 /* XCTest.framework */; };
+		8A2CF2F8057C4E3EB92FF6E7 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD58F858B1E658C006C71AB /* Pods-Tests-dummy.m */; };
+		8B42FCEFCC4AEF9302658CE8 /* XBPaypalItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A1AAA513C50602CB852A8A1D /* XBPaypalItem.h */; };
+		8E03FE66A353BAEDFC1B3D50 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F203471556FF4EECB34E62 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		8E3FB755B4A37C897790F308 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0E458D3E9590BA5A6C1342 /* SpectaTypes.h */; };
+		8FFB663B48E238256F2332C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		904C87DA54F209EA45029E8D /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 506697BDDB83C8A626FBF61F /* EXPMatchers+beSubclassOf.m */; };
+		90A25577AFCBFD87E2438F05 /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF3971B24B51081EFFEC03A /* EXPMatchers+beSupersetOf.h */; };
+		90D66C612A2240B098BA9AAA /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3168E8084B40140260089567 /* AFHTTPSessionManager.h */; };
+		91E0AA5BA6CA6789C1D5BD8F /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 7055E818F26EB8324076D3B6 /* SPTSpec.h */; };
+		921E01BF1F6EA6B3DA2F969E /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E07F7E14C30D6895599D71 /* EXPMatchers+beLessThanOrEqualTo.m */; };
+		93E7722944BF00DE897F2AD9 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46533B5953AC600C9346D9CE /* AFNetworkActivityIndicatorManager.h */; };
+		951369E539CD84F3A408AC46 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A24736442D0E868E5E745EA /* SPTSharedExampleGroups.h */; };
+		977A351961A909C9C3DF2CB2 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B40A31AFA0DE28FD867F4DC2 /* EXPMatchers+beInstanceOf.m */; };
+		98D1A3DDD415D74CCF9B5228 /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D956692C118617164ED71 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9A6DA2C80C629C3F3F324ACB /* XBPWebViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C2CE7E007D33542EB47BE67 /* XBPWebViewViewController.h */; };
+		9B453CDD21DD46DA58027313 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1E267B73D826D33D9C971 /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		9B86E93CF62BB31FD04B1F87 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA0655AF4BF7526C0DF98B5 /* AFURLSessionManager.h */; };
+		9C0C3F52B3A31FD48ADFFCCA /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 389E43D62CAEABAD6A5FAFD5 /* EXPFloatTuple.m */; };
+		9CD7FFDA68A3408488FF7D8E /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B187B9DB9D5ADDB79383F0 /* AFHTTPRequestOperation.h */; };
+		9ED9B9A0C35105188C9F8E2F /* XBPWebViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C2CE7E007D33542EB47BE67 /* XBPWebViewViewController.h */; };
+		9F3BDF6E77461892A8A3D70D /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1614FD10647B2E36DE07F4B3 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		9FC17F915FF8EDFF75857D79 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D967A5C8D33ACE0424B56D5D /* ExpectaObject.m */; };
+		A13DD84AB57BBBE70981D115 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0410449D79C5D6937552F9 /* AFHTTPRequestOperationManager.h */; };
+		A23C76FD84771AC3E926A0EF /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C1F3BDC4EF8342D61A7F2C /* EXPDoubleTuple.h */; };
+		A251C94D020DCD3542C9FDBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		A2F19BF678B6AACE5730037B /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = DE286D1C23B0BFAA867B884A /* EXPMatchers+raiseWithReason.m */; };
+		A4D87B30F7325619B1D3D300 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F794E9F795FB824985335 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A574297567DE7451A78B9187 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = D09260843FE2C2180FF4D269 /* EXPMatchers+beTruthy.h */; };
+		A8AB1347B2B958A5BA1723FB /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB60087DBD4E9DD951111FD /* EXPMatcherHelpers.h */; };
+		AABA718CD59ED5ADED6CDBBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		AB5D9487CE346ED85E461845 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 093F169AC72C24D765D84FE8 /* AFNetworkReachabilityManager.h */; };
+		AC059114E1EB887EC952CFF0 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3BF9FA5116BCE3B72F217E /* EXPMatcher.h */; };
+		AC09BECCB39AC5F3B84A3737 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = E77FB8C210871ADF2B2E8302 /* EXPExpect.h */; };
+		AEAC21FE202F23C6371D08BF /* XBPaypalExpressCheckout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0724F3942ECAB2EF3C754E /* XBPaypalExpressCheckout.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		AF873B0615894A6B30BCBC92 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A04AC8BABA0710D1B15490F /* AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		AF8E95A22E54995919F8EB4B /* XBPaypalExpressCheckout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0724F3942ECAB2EF3C754E /* XBPaypalExpressCheckout.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		AFB95ECB7E9DC870910C2A6B /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D41B9FEF1CD79E5402F915A2 /* UIKit+AFNetworking.h */; };
+		B166E729256C7298836FD879 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 8991DC7D81735B116E819794 /* EXPMatchers+contain.h */; };
+		B17A005AEFB762A18E217575 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F150F2B4A2913CD1C3F549CA /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B2C1D51DAEF477C0E567C971 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C890C65C013655FD876E70A /* EXPMatchers+beCloseTo.m */; };
+		B419EF32BCB7F4BBA4A6384C /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3571C4C6A0A48D97373049C5 /* EXPMatchers+beIdenticalTo.h */; };
+		B49B44B4AE609249A6FCC393 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B9AE9FD08F6FDFA2E6029686 /* EXPDefines.h */; };
+		B4D83D6B21CC255366B0EB21 /* XBPaypalExpressCheckout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3456F431D02C50D932EB44E5 /* XBPaypalExpressCheckout.h */; };
+		B63A4934B4ECCFA698406D08 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A83E76EA695DA1A02234 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B89C7E219142A5985D32A206 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 310E30B886FED877DDE38E8A /* XCTestCase+Specta.h */; };
+		BB21F5ACC0C61E74A21CFCE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C2DA590423FDC71CBC8508 /* CoreGraphics.framework */; };
+		BB8AC363C18F1F78F762D69F /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D705AF0A2346D3BA3CC176B1 /* EXPUnsupportedObject.m */; };
+		BDC2BB7A282FF5BC5D618690 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 745C07C531A0C6C417A3DD2A /* UIButton+AFNetworking.h */; };
+		BFCC1FBEF6BF47DCD123197D /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4071FC57FDF5ECA49C63A0B /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C09B48A8748E26A77C46C7C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF82E1D7B74A16B8983C3A /* Foundation.framework */; };
+		C2630FA7FB831C0297BF48FB /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD302AD164AB463118EAB35 /* XCTest+Private.h */; };
+		C316612DCA8A7FC987966CEF /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 453CDBDD5506A47042D9E7A4 /* EXPMatchers+respondTo.h */; };
+		C358A62BD5D26A3D28A70E1F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DD98EB1C775980744C257FFB /* AFNetworking.h */; };
+		C39C7B467ADE66DBA8D3CA4A /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FD8344C0FB1D20DCC1BF61 /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C3FC52D9CF0ABD690CE3FB9E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C163D453666C756EBD83915 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C474175B033379466E2BE13A /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF7512F06B80E59CA5D3DCF /* EXPMatchers+endWith.h */; };
+		C4D42103F899AEE5A4844F93 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82DD0B90BA9BBF45219E9A /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C7324B76B3C9D4F649EF5639 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF3FA1093B64550E1C56298 /* AFURLRequestSerialization.h */; };
+		C993EE0411E1D15CF215F554 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595726E2B34024631F6D092 /* SpectaDSL.h */; };
+		CE0D704906C046EDED0F06A3 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C751ECCE1A320134797F7C /* UIAlertView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CE8FFCF60F2B289A2A35A807 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4E8024E388A88C8830CADF /* EXPMatchers+beInstanceOf.h */; };
+		CE9B07F510B0A3CCA51C43ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257D3E87EA87623B09C48126 /* SystemConfiguration.framework */; };
+		CF85A9501F8131A859296D0A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C95AD8DCC16BF903267FA3F3 /* AFURLConnectionOperation.h */; };
+		D11979059ECC29FE3892EA12 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A35DCF26CA6B57F51E199B /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D235153BDF2070A611E6A8CB /* XBPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = B5494F5A54A9F44267BEBE83 /* XBPayment.h */; };
+		D2977421E7FA024E925EF8FD /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BAE24CFB897BFB5BE22485 /* UIWebView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D2BBBA5EC0DD60DBF6974A11 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F8F90CB41097CE530230CA /* EXPMatchers+beCloseTo.h */; };
+		D38A3077ED20C7E1B73217B4 /* EXPMatchers+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9549BD55A2816E603A8B9F /* EXPMatchers+FBSnapshotTest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D5D4D588B6713FCCB895414E /* XBPaypalItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 503E0FAE69FFDDDC1D3141DD /* XBPaypalItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D64F79A8DCE4032538E421F1 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F392C891C8180C3155FEB8E /* AFURLResponseSerialization.h */; };
+		D7253225DB80D790BA0077C0 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4071FC57FDF5ECA49C63A0B /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D946FF4A192FC32D776AE0D5 /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEB2AA8A7FDBA5AECA0445D /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		DBCF7059422C31FF7BF1BABF /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A04AC8BABA0710D1B15490F /* AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E0274617ACB8441C672B8D7D /* XBPWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C185687E637ADC2C109C9F /* XBPWebViewViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E05A59ED942BA27FCB15D47A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B82DD0B90BA9BBF45219E9A /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E0877FD6A8E3E95ECA9AC072 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F203471556FF4EECB34E62 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E22BD8AC5952B82FF0DFAC05 /* XBPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1919ACEDBBBCF8344DB908F2 /* XBPayment.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E56ABAC91E2EE9D10C139B0B /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F2DED85803F114649515A6 /* UIProgressView+AFNetworking.h */; };
+		E5F775265CAAC9E21980CBC0 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914A83E76EA695DA1A02234 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E624D7D2C33122BB595F3B4B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 402DD34A5931D0FBA04183BD /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E669216F796D9E398698B445 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F794E9F795FB824985335 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E842FA42D0A4561575F4E1A4 /* Pods-XBPayment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EC46025B5E9E0B7865A71 /* Pods-XBPayment-dummy.m */; };
+		ED1B912F4739CD0D476191D2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C163D453666C756EBD83915 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EE16890094F84CF9443D796B /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA0655AF4BF7526C0DF98B5 /* AFURLSessionManager.h */; };
+		EE1CAC92685BF6FB67DE654A /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46533B5953AC600C9346D9CE /* AFNetworkActivityIndicatorManager.h */; };
+		F04F158F24017BE8EF7CC5B0 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A3748FF0B7BE6AC663482A /* EXPMatchers+beSubclassOf.h */; };
+		F2278125D15491604570707D /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7431EB130DEB66773E772E2 /* EXPMatchers+respondTo.m */; };
+		F24A8FDF6864BD1AACF4F918 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B4AC75D8896CAFF41E6761 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F281249FD2D794137BF6975D /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 093F169AC72C24D765D84FE8 /* AFNetworkReachabilityManager.h */; };
+		F288BD3AF31FEBE483AA4C61 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9CFB4421BF8014786219F /* EXPMatchers+beFalsy.m */; };
+		F295EDA17290CF4CF8985542 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = B52D0BC490433E491DD6B0A1 /* EXPMatchers+beginWith.h */; };
+		F34F813AFCC73C6089E012A2 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B93292F43E806A79F04F /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F3E5504030B0B70DC59AF9F0 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CE354EE0F93AD74F34A1F04B /* SPTExampleGroup.h */; };
+		F414FEC3EC3F1D5C6DC9F9C6 /* XBPaypalItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A1AAA513C50602CB852A8A1D /* XBPaypalItem.h */; };
+		F52DF0428D41EF6F985592FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D531F13A8CED87895C9EA /* Security.framework */; };
+		F5ED1B8871D49C8CEFEB790C /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 0787E964A662DE8C68B271BD /* EXPMatchers+beInTheRangeOf.h */; };
+		F90967D43D1B41FC921C862B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A35DCF26CA6B57F51E199B /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F94199C80730CBF0F4290C4A /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF3FA1093B64550E1C56298 /* AFURLRequestSerialization.h */; };
+		F9B3C336B9918E06BABD1145 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BFE08AF838DFB8E2FC7BE /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FA6287603E0BCBE4EE14C7FE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F392C891C8180C3155FEB8E /* AFURLResponseSerialization.h */; };
+		FC01600D985C8589447EC05C /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F91FCE4A88A02327B5D6E050 /* UIImageView+AFNetworking.h */; };
+		FFC154A6A80787F3A8781063 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0410449D79C5D6937552F9 /* AFHTTPRequestOperationManager.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AEFBFC22056920308B45C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D97812999167C5768230F2A;
+			remoteInfo = "Pods-Tests-XBPayment";
+		};
+		0DF5794230313C2508D50A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4EF16F9C21DD801F345A793;
+			remoteInfo = "Pods-Tests-AFNetworking";
+		};
+		255F52A2BFCE09EA1D4C3BE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 414BD9D4D37DD4B983566B7A;
+			remoteInfo = "Pods-Tests-Specta";
+		};
+		26FDA313C133B109DB98D60A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA068A9E9332A4D7E841BE96;
+			remoteInfo = XBPayment;
+		};
+		56A2C9C197E0F61781C6DE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924930DF0FA695F017CAC561;
+			remoteInfo = "Pods-XBPayment-AFNetworking";
+		};
+		78472A07E9372013FE012194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA068A9E9332A4D7E841BE96;
+			remoteInfo = XBPayment;
+		};
+		8C3A2D907151D67197C56DE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D9FA222E9776043C84A1F02;
+			remoteInfo = "Pods-XBPayment-XBPayment";
+		};
+		AA4C95D06DF19E3C5F2E25D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0460A466CD79EC26ABDDFCB;
+			remoteInfo = "Pods-Tests-Expecta+Snapshots";
+		};
+		B2E3ED1AD1C18A290FA6AD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C48A2359C00AF4EEDA0F795;
+			remoteInfo = "Pods-Tests-Expecta";
+		};
+		C77EBB51CA3773F7F3722D4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57D08C9A4AE63DC1CD7207D;
+			remoteInfo = "Pods-Tests-FBSnapshotTestCase";
+		};
+		DC6986217046426D1E26ADA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C48A2359C00AF4EEDA0F795;
+			remoteInfo = "Pods-Tests-Expecta";
+		};
+		F0D9F337AA65071069D1944A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57D08C9A4AE63DC1CD7207D;
+			remoteInfo = "Pods-Tests-FBSnapshotTestCase";
+		};
+		F7528C1867244A7D524C2185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4EF16F9C21DD801F345A793;
+			remoteInfo = "Pods-Tests-AFNetworking";
+		};
+		FDE8074EF43CA37B79F10331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94B606D675ECC0D694EC1F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924930DF0FA695F017CAC561;
+			remoteInfo = "Pods-XBPayment-AFNetworking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C2DA590423FDC71CBC8508 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		044D0205EF4BC7DA8A289BB4 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		052EE42C4A8CB77444A996A4 /* Pods-XBPayment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XBPayment-acknowledgements.plist"; sourceTree = "<group>"; };
+		058097BC73DF5951E3E8D611 /* Pods-Tests-XBPayment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-XBPayment-dummy.m"; sourceTree = "<group>"; };
+		05895E71E902E06FDB4F3AE6 /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		0708FA98BF4761A70F50DA6B /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		0787E964A662DE8C68B271BD /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		093F169AC72C24D765D84FE8 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0C163D453666C756EBD83915 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		0C74CCB70DE428CFE7F3D2FE /* Pods-Tests-Expecta+Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-Expecta+Snapshots-dummy.m"; sourceTree = "<group>"; };
+		0E497DD09893EFA516046E6D /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		0F1D956692C118617164ED71 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		0F392C891C8180C3155FEB8E /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		1061E922B428E7C9408F60A3 /* Pods-Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		106535C1BAD1EB2437BE434A /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestController.h; sourceTree = "<group>"; };
+		10E07F7E14C30D6895599D71 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		114BFE08AF838DFB8E2FC7BE /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestController.m; sourceTree = "<group>"; };
+		118A5B46065960F1827B9B1E /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		1237EFA145DE194D57E7FA1D /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		127926A3B131DA74D2F57084 /* libPods-XBPayment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XBPayment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DE307BC9961D96C8AC2A79 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		1594ECB0394DDD693F9DCDB8 /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		15DD6757D3CE8B47A124166E /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		1614FD10647B2E36DE07F4B3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		183A4AAC39FAD67BA4504B87 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		1914A83E76EA695DA1A02234 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1919ACEDBBBCF8344DB908F2 /* XBPayment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XBPayment.m; path = Pod/Classes/XBPayment.m; sourceTree = "<group>"; };
+		1965B93292F43E806A79F04F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		1A24736442D0E868E5E745EA /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		1F0E458D3E9590BA5A6C1342 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		1F2989E3750C0B2BB1D2C401 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		1F7950DD27C762C0C481506C /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		2019FEDB9FDFDB3780908668 /* Pods-Tests-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		21B187B9DB9D5ADDB79383F0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		21D2E6110ABC8F257C67EA32 /* Pods-XBPayment-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBPayment-AFNetworking.xcconfig"; path = "../Pods-XBPayment-AFNetworking/Pods-XBPayment-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		250EC5D777D20857CE84B1E8 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		254615525FA1EE80A38D53D1 /* libPods-Tests-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		257D3E87EA87623B09C48126 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		26A8074BDC94A38FD89D336F /* Pods-Tests-XBPayment-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-XBPayment-Private.xcconfig"; sourceTree = "<group>"; };
+		273A5E5470ADF5A6ACC9C17B /* Pods-Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		28211654E4850DB5B7157C65 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
+		28416982EAFF47176F3A58BF /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		2A199C7BED26110FA12DC438 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		2B0474E2EF1361ED911475EC /* libPods-Tests-Expecta+Snapshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Expecta+Snapshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF7512F06B80E59CA5D3DCF /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		2BF9CFB4421BF8014786219F /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		2CA1E267B73D826D33D9C971 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		2F645FFF018259006A72BC9C /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		2F8F183F2F6119C5B1159527 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		30C6C950977BE1F58E6E7F90 /* Pods-Tests-Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
+		310E30B886FED877DDE38E8A /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		3168E8084B40140260089567 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		321E0F8C42D273B952390AA3 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		3397E0891B469E9EC25E1ED0 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		3417087E9D36BFF8A43E2C5F /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		3456F431D02C50D932EB44E5 /* XBPaypalExpressCheckout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XBPaypalExpressCheckout.h; path = Pod/Classes/XBPaypalExpressCheckout.h; sourceTree = "<group>"; };
+		3571C4C6A0A48D97373049C5 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		3595726E2B34024631F6D092 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		35F203471556FF4EECB34E62 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		36898BF49306C9D6B4E5B10C /* Pods-Tests-FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		389E43D62CAEABAD6A5FAFD5 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		3AC7DAB163CC390ED6C5D223 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		3B6EC46025B5E9E0B7865A71 /* Pods-XBPayment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XBPayment-dummy.m"; sourceTree = "<group>"; };
+		3BF3971B24B51081EFFEC03A /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		3C0724F3942ECAB2EF3C754E /* XBPaypalExpressCheckout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XBPaypalExpressCheckout.m; path = Pod/Classes/XBPaypalExpressCheckout.m; sourceTree = "<group>"; };
+		3F1A5044AA031A2CD37B22B0 /* Pods-XBPayment-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-XBPayment-AFNetworking-prefix.pch"; path = "../Pods-XBPayment-AFNetworking/Pods-XBPayment-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		402DD34A5931D0FBA04183BD /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		407AD9E98C0E951C8A1D251D /* Pods-Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		40BFABBA8EF0F2531C9051F6 /* Pods-Tests-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		40C751ECCE1A320134797F7C /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		40D008107DAAB7B79E49923D /* libPods-Tests-Specta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Specta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A4F40BB0A2ABEDF1F1B25E /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		4287C93237C704DD3F9C02A1 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		428AF07E6B3AE012C1A1ED50 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		453CDBDD5506A47042D9E7A4 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		46533B5953AC600C9346D9CE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		47BAE24CFB897BFB5BE22485 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		47DF82E1D7B74A16B8983C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		485237A0A58CEBA6EBDC12E4 /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		4B5C27FC3ED2D393A670FBE5 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		503E0FAE69FFDDDC1D3141DD /* XBPaypalItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XBPaypalItem.m; path = Pod/Classes/XBPaypalItem.m; sourceTree = "<group>"; };
+		506697BDDB83C8A626FBF61F /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		522FC851E11065624414C115 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		5A0A3E99EC3FB433C6FE3E9B /* Pods-XBPayment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XBPayment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5B04DC0997953DF752DFEA2A /* Pods-Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		5C890C65C013655FD876E70A /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		5DD302AD164AB463118EAB35 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		5E700DD36C7A66F10106CFA6 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		5FF3FA1093B64550E1C56298 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		61834BA52530226EF641A799 /* libPods-Tests-Expecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Expecta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618CC66B0FE293A79E8A1F2D /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		624EF6FCDB939704C9189E4E /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		627DF5DF555915102A03CB83 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		6472A1BF7283397509ACE507 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6A64D24CCCF9A4224FCDD86F /* Pods-Tests-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		6AB95F8F86881E539749802F /* Pods-XBPayment-XBPayment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-XBPayment-XBPayment-prefix.pch"; path = "../Pods-XBPayment-XBPayment/Pods-XBPayment-XBPayment-prefix.pch"; sourceTree = "<group>"; };
+		6BEB2AA8A7FDBA5AECA0445D /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		6C2CE7E007D33542EB47BE67 /* XBPWebViewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XBPWebViewViewController.h; path = Pod/Classes/XBPWebViewViewController.h; sourceTree = "<group>"; };
+		6CA03AC1AFEB1EF9FD0E79E6 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		6CC37EB804C48F13A96A668D /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		6D06F7EA7F66F194DF30F406 /* Pods-Tests-FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
+		6E6F794E9F795FB824985335 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		6E821323B4193432A2A91A0E /* Pods-XBPayment-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XBPayment-environment.h"; sourceTree = "<group>"; };
+		6E9549BD55A2816E603A8B9F /* EXPMatchers+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+FBSnapshotTest.m"; sourceTree = "<group>"; };
+		6FA8C9B8F414CA014889D49A /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		6FD545203161DF77C520B26F /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Diff.h"; sourceTree = "<group>"; };
+		702E05DB13590EFBB4BA2785 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		7055E818F26EB8324076D3B6 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		72971AC868293ECEF950DDBA /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		729CE321A98440B53609EB37 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		745C07C531A0C6C417A3DD2A /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		76D35769B81D301AB44AA40E /* Pods-XBPayment-XBPayment-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBPayment-XBPayment-Private.xcconfig"; path = "../Pods-XBPayment-XBPayment/Pods-XBPayment-XBPayment-Private.xcconfig"; sourceTree = "<group>"; };
+		76D6848FCD956A09750EAF1F /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		78360BD2C9C04FFC9663C0D8 /* Pods-Tests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
+		7A4648F20D48B354EC269F45 /* Pods-XBPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XBPayment.debug.xcconfig"; sourceTree = "<group>"; };
+		7A8E6698282A95CD25EC5E6C /* Pods-Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		7AB60087DBD4E9DD951111FD /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		7B466D5090A4A0168E080D39 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		7B82DD0B90BA9BBF45219E9A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7E3D3FBCB97E9BA31F1C6B07 /* Pods-XBPayment-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-XBPayment-AFNetworking-dummy.m"; path = "../Pods-XBPayment-AFNetworking/Pods-XBPayment-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		7FD58F858B1E658C006C71AB /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		80223504FFD102AD20B80C2E /* Pods-XBPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XBPayment.release.xcconfig"; sourceTree = "<group>"; };
+		80A8F36BE17C17BD33B6BBA7 /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		83FD8344C0FB1D20DCC1BF61 /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		87E91696C04C34A95A1452B5 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		8991DC7D81735B116E819794 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		8AFECF1B4335A54FCCC01BB6 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compare.m"; sourceTree = "<group>"; };
+		8CA349510DFD0DF72522D49C /* Pods-XBPayment-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XBPayment-resources.sh"; sourceTree = "<group>"; };
+		8D01ADF32C0A68A9275EB12B /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		8D0410449D79C5D6937552F9 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		8D8CE583C0F590BB652ADF80 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		8DD28B3C859C7F37EB136DAC /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		9214D79628307A1A38B3B663 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		93447FD0027E86B9027199EB /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		94C964E831C29CB75BFE9E6E /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		9872896B3F95CF4F744FFADD /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		98B333F9EEBBBF18B32976CD /* Pods-Tests-XBPayment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-XBPayment-prefix.pch"; sourceTree = "<group>"; };
+		9A04AC8BABA0710D1B15490F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		A14DAC58417C372E20AAECA9 /* Pods-Tests-FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		A1AAA513C50602CB852A8A1D /* XBPaypalItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XBPaypalItem.h; path = Pod/Classes/XBPaypalItem.h; sourceTree = "<group>"; };
+		A40BBC4822D245B904F27A8B /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A42A2B629C8165D60CFFF525 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		A7431EB130DEB66773E772E2 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		ABC42EE09770CD7DEDDD1CCC /* libPods-Tests-FBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-FBSnapshotTestCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02EE39865D8D5C2D9C0C872 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		B1E0C11FAD0F9D71E9BDD7FD /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B3375F043F4603774AB4024A /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		B4071FC57FDF5ECA49C63A0B /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		B40A31AFA0DE28FD867F4DC2 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		B42582B67662184288A8D690 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compare.h"; sourceTree = "<group>"; };
+		B52D0BC490433E491DD6B0A1 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		B5494F5A54A9F44267BEBE83 /* XBPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XBPayment.h; path = Pod/Classes/XBPayment.h; sourceTree = "<group>"; };
+		B65FD620CC8DCC9EA0360BD1 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C1F3BDC4EF8342D61A7F2C /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		B831F50486F0F8BA70206EA1 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		B87F88227075BE3A2F914193 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		B8B6929CE803002C05EBC8AB /* libPods-Tests-XBPayment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-XBPayment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9546E5FFE91BEEDBF86E39B /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		B9AE9FD08F6FDFA2E6029686 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		BB7AF45A08D750DC03A5F17C /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		BE4D531F13A8CED87895C9EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BFA0655AF4BF7526C0DF98B5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		C017F12DC556BF13A13F6F44 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		C09C02191B3000E62C51212C /* Pods-Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		C27A5FEF4800D1B3850A6302 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		C671C88417B20A4931EF0889 /* libPods-XBPayment-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XBPayment-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C794900F6CD728A97160B132 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C80A6083DE10F55CE162E078 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		C850A5CECE8D3C95D9F44AD5 /* libPods-XBPayment-XBPayment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XBPayment-XBPayment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EF9A209F353634BC198861 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		C95AD8DCC16BF903267FA3F3 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		C97E116043434BFD2EE12CCB /* Pods-Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		CB4E8024E388A88C8830CADF /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		CC7770ABABB02E0B3D8C9433 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		CE354EE0F93AD74F34A1F04B /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		D0074E51504ACCE24D3C1AE0 /* Pods-Tests-XBPayment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-XBPayment.xcconfig"; sourceTree = "<group>"; };
+		D06E94EF2D5ED328D0415B17 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		D09260843FE2C2180FF4D269 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		D102406F7C10623E87D950B6 /* Pods-XBPayment-XBPayment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-XBPayment-XBPayment-dummy.m"; path = "../Pods-XBPayment-XBPayment/Pods-XBPayment-XBPayment-dummy.m"; sourceTree = "<group>"; };
+		D250D2F9357B5777DDFCE728 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		D2A35DCF26CA6B57F51E199B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		D39B5B778A2FA82B5D0C4BBE /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		D41B9FEF1CD79E5402F915A2 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		D4F8F90CB41097CE530230CA /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		D5C185687E637ADC2C109C9F /* XBPWebViewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XBPWebViewViewController.m; path = Pod/Classes/XBPWebViewViewController.m; sourceTree = "<group>"; };
+		D705AF0A2346D3BA3CC176B1 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		D94C44157D9A9DB2D4979EC3 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		D967A5C8D33ACE0424B56D5D /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		DC2790CFBA50527BB773637B /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		DD98EB1C775980744C257FFB /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		DE286D1C23B0BFAA867B884A /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		E3B4AC75D8896CAFF41E6761 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		E4A3748FF0B7BE6AC663482A /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		E585908D9537D1362C0DCCC1 /* XBPayment.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBPayment.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75BD65E0C2F43A101144E99 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		E77FB8C210871ADF2B2E8302 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		E880B4772A5B3C9FDF7CE516 /* Pods-Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		E973243891CA65EF56B27343 /* Pods-Tests-Expecta+Snapshots-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta+Snapshots-Private.xcconfig"; sourceTree = "<group>"; };
+		EA759312F91BAF0752C1E210 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		EA7593A95B48FD3025F5A624 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Diff.m"; sourceTree = "<group>"; };
+		EBB4C1EFC2AAC43FD4058AB9 /* Pods-XBPayment-XBPayment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBPayment-XBPayment.xcconfig"; path = "../Pods-XBPayment-XBPayment/Pods-XBPayment-XBPayment.xcconfig"; sourceTree = "<group>"; };
+		EE725A92A86A23E23E8F8EB0 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		F0C3EE366B9CFF11C72D0E35 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		F150F2B4A2913CD1C3F549CA /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		F151EC810C5ADBF57516BD7A /* Pods-XBPayment-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBPayment-AFNetworking-Private.xcconfig"; path = "../Pods-XBPayment-AFNetworking/Pods-XBPayment-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		F272D6C120FFD8CDB9242CCB /* Pods-Tests-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		F2F2DED85803F114649515A6 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		F3534603596A76A00D05B0D7 /* Pods-Tests-Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
+		F89A04E88C5E62C767658500 /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		F91FCE4A88A02327B5D6E050 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		FB3BF9FA5116BCE3B72F217E /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		FD7304FDCE0239595DE7C187 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D927B8365E69A088EEF099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB21F5ACC0C61E74A21CFCE6 /* CoreGraphics.framework in Frameworks */,
+				3F49DB7724A43960EE789C26 /* Foundation.framework in Frameworks */,
+				24C97B9A651120E8C52F50BE /* MobileCoreServices.framework in Frameworks */,
+				095777F9B21E9FC7D723A611 /* Security.framework in Frameworks */,
+				CE9B07F510B0A3CCA51C43ED /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3854DE2D7DA2ABA24ADD5C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5662032142320CFE71AE0D /* CoreGraphics.framework in Frameworks */,
+				77199EE7D063034832B0A8C4 /* Foundation.framework in Frameworks */,
+				609646B5EBFAC7EC1F32ABEF /* MobileCoreServices.framework in Frameworks */,
+				F52DF0428D41EF6F985592FE /* Security.framework in Frameworks */,
+				48E20206FFEEF13A8ECC4A54 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FDEA112C3D379443771250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48BBDBDEE33E50DB106CE8AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532C4B5117D3F00AD4ADC247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE64016ED9A292002E130C8 /* Foundation.framework in Frameworks */,
+				113DA790F71FE71B9D99B845 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75279B14BE97EB510618E9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A5F692E12EAD2FE0343531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABA718CD59ED5ADED6CDBBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7769F023F32BFFB9F6701BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFB663B48E238256F2332C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4FDC32DFFFE5F497A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455A61F9A37BF532EBF1F856 /* Foundation.framework in Frameworks */,
+				85F95E3692C7545C76288818 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54349436994977EFD0EC2A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09B48A8748E26A77C46C7C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC270A9A7A77559B2C307EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4DC5773CADB2120F551450 /* Foundation.framework in Frameworks */,
+				3FB52E62962CC21DEC74A675 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7794D6BB85DEA3918BEE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A251C94D020DCD3542C9FDBE /* Foundation.framework in Frameworks */,
+				13D3DD5FB6C6B4F735F88D18 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005B73D7FAE5EC276433B779 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0074E51504ACCE24D3C1AE0 /* Pods-Tests-XBPayment.xcconfig */,
+				26A8074BDC94A38FD89D336F /* Pods-Tests-XBPayment-Private.xcconfig */,
+				058097BC73DF5951E3E8D611 /* Pods-Tests-XBPayment-dummy.m */,
+				98B333F9EEBBBF18B32976CD /* Pods-Tests-XBPayment-prefix.pch */,
+				EBB4C1EFC2AAC43FD4058AB9 /* Pods-XBPayment-XBPayment.xcconfig */,
+				76D35769B81D301AB44AA40E /* Pods-XBPayment-XBPayment-Private.xcconfig */,
+				D102406F7C10623E87D950B6 /* Pods-XBPayment-XBPayment-dummy.m */,
+				6AB95F8F86881E539749802F /* Pods-XBPayment-XBPayment-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-Tests-XBPayment";
+			sourceTree = "<group>";
+		};
+		045CEBFF5198EC168FCFC4FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30C6C950977BE1F58E6E7F90 /* Pods-Tests-Expecta+Snapshots.xcconfig */,
+				E973243891CA65EF56B27343 /* Pods-Tests-Expecta+Snapshots-Private.xcconfig */,
+				0C74CCB70DE428CFE7F3D2FE /* Pods-Tests-Expecta+Snapshots-dummy.m */,
+				F3534603596A76A00D05B0D7 /* Pods-Tests-Expecta+Snapshots-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Tests-Expecta+Snapshots";
+			sourceTree = "<group>";
+		};
+		16A742B09F28D0FB26824E4E /* Expecta+Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				28211654E4850DB5B7157C65 /* EXPMatchers+FBSnapshotTest.h */,
+				6E9549BD55A2816E603A8B9F /* EXPMatchers+FBSnapshotTest.m */,
+				045CEBFF5198EC168FCFC4FC /* Support Files */,
+			);
+			path = "Expecta+Snapshots";
+			sourceTree = "<group>";
+		};
+		170B2089533A25A25F975F20 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				D94C44157D9A9DB2D4979EC3 /* FBSnapshotTestCase.h */,
+				2CA1E267B73D826D33D9C971 /* FBSnapshotTestCase.m */,
+				106535C1BAD1EB2437BE434A /* FBSnapshotTestController.h */,
+				114BFE08AF838DFB8E2FC7BE /* FBSnapshotTestController.m */,
+				B42582B67662184288A8D690 /* UIImage+Compare.h */,
+				8AFECF1B4335A54FCCC01BB6 /* UIImage+Compare.m */,
+				6FD545203161DF77C520B26F /* UIImage+Diff.h */,
+				EA7593A95B48FD3025F5A624 /* UIImage+Diff.m */,
+				5C23588C0034E30144842E53 /* Support Files */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		1A802AD7F4C99FE14A777178 = {
+			isa = PBXGroup;
+			children = (
+				C794900F6CD728A97160B132 /* Podfile */,
+				34357120E9CFE29DBCD24F07 /* Development Pods */,
+				BAB5D42229CADB3C030EC9D9 /* Frameworks */,
+				91F679CFB48B8177D4E9AA0C /* Pods */,
+				E5DCB14EF0999B19E1866E00 /* Products */,
+				7E5A680D411F017B2D34223F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		1D162EB1217B48DD5495BB1D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				46533B5953AC600C9346D9CE /* AFNetworkActivityIndicatorManager.h */,
+				E3B4AC75D8896CAFF41E6761 /* AFNetworkActivityIndicatorManager.m */,
+				321E0F8C42D273B952390AA3 /* UIActivityIndicatorView+AFNetworking.h */,
+				35F203471556FF4EECB34E62 /* UIActivityIndicatorView+AFNetworking.m */,
+				D39B5B778A2FA82B5D0C4BBE /* UIAlertView+AFNetworking.h */,
+				40C751ECCE1A320134797F7C /* UIAlertView+AFNetworking.m */,
+				745C07C531A0C6C417A3DD2A /* UIButton+AFNetworking.h */,
+				EA759312F91BAF0752C1E210 /* UIButton+AFNetworking.m */,
+				F91FCE4A88A02327B5D6E050 /* UIImageView+AFNetworking.h */,
+				1F2989E3750C0B2BB1D2C401 /* UIImageView+AFNetworking.m */,
+				D41B9FEF1CD79E5402F915A2 /* UIKit+AFNetworking.h */,
+				F2F2DED85803F114649515A6 /* UIProgressView+AFNetworking.h */,
+				D06E94EF2D5ED328D0415B17 /* UIProgressView+AFNetworking.m */,
+				5E700DD36C7A66F10106CFA6 /* UIRefreshControl+AFNetworking.h */,
+				1965B93292F43E806A79F04F /* UIRefreshControl+AFNetworking.m */,
+				522FC851E11065624414C115 /* UIWebView+AFNetworking.h */,
+				47BAE24CFB897BFB5BE22485 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		1D82D0C20E3E100CCA1321A2 /* Pods-XBPayment */ = {
+			isa = PBXGroup;
+			children = (
+				5A0A3E99EC3FB433C6FE3E9B /* Pods-XBPayment-acknowledgements.markdown */,
+				052EE42C4A8CB77444A996A4 /* Pods-XBPayment-acknowledgements.plist */,
+				3B6EC46025B5E9E0B7865A71 /* Pods-XBPayment-dummy.m */,
+				6E821323B4193432A2A91A0E /* Pods-XBPayment-environment.h */,
+				8CA349510DFD0DF72522D49C /* Pods-XBPayment-resources.sh */,
+				7A4648F20D48B354EC269F45 /* Pods-XBPayment.debug.xcconfig */,
+				80223504FFD102AD20B80C2E /* Pods-XBPayment.release.xcconfig */,
+			);
+			name = "Pods-XBPayment";
+			path = "Target Support Files/Pods-XBPayment";
+			sourceTree = "<group>";
+		};
+		34357120E9CFE29DBCD24F07 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AF7667294F43E33D7DF48 /* XBPayment */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3B1F49BA91FE5CE1C61BE976 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				3168E8084B40140260089567 /* AFHTTPSessionManager.h */,
+				1914A83E76EA695DA1A02234 /* AFHTTPSessionManager.m */,
+				BFA0655AF4BF7526C0DF98B5 /* AFURLSessionManager.h */,
+				402DD34A5931D0FBA04183BD /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		4551C79F0E723C34D273A405 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				21B187B9DB9D5ADDB79383F0 /* AFHTTPRequestOperation.h */,
+				0C163D453666C756EBD83915 /* AFHTTPRequestOperation.m */,
+				8D0410449D79C5D6937552F9 /* AFHTTPRequestOperationManager.h */,
+				9A04AC8BABA0710D1B15490F /* AFHTTPRequestOperationManager.m */,
+				C95AD8DCC16BF903267FA3F3 /* AFURLConnectionOperation.h */,
+				B4071FC57FDF5ECA49C63A0B /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		5192130EBA41E0F36D15384B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A64D24CCCF9A4224FCDD86F /* Pods-Tests-AFNetworking.xcconfig */,
+				2019FEDB9FDFDB3780908668 /* Pods-Tests-AFNetworking-Private.xcconfig */,
+				F272D6C120FFD8CDB9242CCB /* Pods-Tests-AFNetworking-dummy.m */,
+				40BFABBA8EF0F2531C9051F6 /* Pods-Tests-AFNetworking-prefix.pch */,
+				21D2E6110ABC8F257C67EA32 /* Pods-XBPayment-AFNetworking.xcconfig */,
+				F151EC810C5ADBF57516BD7A /* Pods-XBPayment-AFNetworking-Private.xcconfig */,
+				7E3D3FBCB97E9BA31F1C6B07 /* Pods-XBPayment-AFNetworking-dummy.m */,
+				3F1A5044AA031A2CD37B22B0 /* Pods-XBPayment-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Tests-AFNetworking";
+			sourceTree = "<group>";
+		};
+		520F8B484DBBE75C9969AE2F /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B1E0C11FAD0F9D71E9BDD7FD /* Pods-Tests-acknowledgements.markdown */,
+				A40BBC4822D245B904F27A8B /* Pods-Tests-acknowledgements.plist */,
+				7FD58F858B1E658C006C71AB /* Pods-Tests-dummy.m */,
+				3AC7DAB163CC390ED6C5D223 /* Pods-Tests-environment.h */,
+				3417087E9D36BFF8A43E2C5F /* Pods-Tests-resources.sh */,
+				729CE321A98440B53609EB37 /* Pods-Tests.debug.xcconfig */,
+				2F8F183F2F6119C5B1159527 /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		5C23588C0034E30144842E53 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78360BD2C9C04FFC9663C0D8 /* Pods-Tests-FBSnapshotTestCase.xcconfig */,
+				6D06F7EA7F66F194DF30F406 /* Pods-Tests-FBSnapshotTestCase-Private.xcconfig */,
+				36898BF49306C9D6B4E5B10C /* Pods-Tests-FBSnapshotTestCase-dummy.m */,
+				A14DAC58417C372E20AAECA9 /* Pods-Tests-FBSnapshotTestCase-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Tests-FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		6C35984D2774021D71462C85 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				407AD9E98C0E951C8A1D251D /* Pods-Tests-Specta.xcconfig */,
+				C97E116043434BFD2EE12CCB /* Pods-Tests-Specta-Private.xcconfig */,
+				7A8E6698282A95CD25EC5E6C /* Pods-Tests-Specta-dummy.m */,
+				C09C02191B3000E62C51212C /* Pods-Tests-Specta-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Tests-Specta";
+			sourceTree = "<group>";
+		};
+		7D5954B06BF48B297EE67669 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1061E922B428E7C9408F60A3 /* Pods-Tests-Expecta.xcconfig */,
+				5B04DC0997953DF752DFEA2A /* Pods-Tests-Expecta-Private.xcconfig */,
+				273A5E5470ADF5A6ACC9C17B /* Pods-Tests-Expecta-dummy.m */,
+				E880B4772A5B3C9FDF7CE516 /* Pods-Tests-Expecta-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		7E5A680D411F017B2D34223F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				520F8B484DBBE75C9969AE2F /* Pods-Tests */,
+				1D82D0C20E3E100CCA1321A2 /* Pods-XBPayment */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		871FB2A8376B28A74602A9FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		895DA14EE795D3C94104F48F /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				5FF3FA1093B64550E1C56298 /* AFURLRequestSerialization.h */,
+				1614FD10647B2E36DE07F4B3 /* AFURLRequestSerialization.m */,
+				0F392C891C8180C3155FEB8E /* AFURLResponseSerialization.h */,
+				D2A35DCF26CA6B57F51E199B /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		91F679CFB48B8177D4E9AA0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CED94E3FE2B81AE6ADE97CAC /* AFNetworking */,
+				9BD9C5DC3DE598768F6D38C1 /* Expecta */,
+				16A742B09F28D0FB26824E4E /* Expecta+Snapshots */,
+				170B2089533A25A25F975F20 /* FBSnapshotTestCase */,
+				9531196A252C9620FCF1C3CD /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9531196A252C9620FCF1C3CD /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				183A4AAC39FAD67BA4504B87 /* SPTCallSite.h */,
+				428AF07E6B3AE012C1A1ED50 /* SPTCallSite.m */,
+				05895E71E902E06FDB4F3AE6 /* SPTCompiledExample.h */,
+				0F1D956692C118617164ED71 /* SPTCompiledExample.m */,
+				41A4F40BB0A2ABEDF1F1B25E /* SPTExample.h */,
+				DC2790CFBA50527BB773637B /* SPTExample.m */,
+				CE354EE0F93AD74F34A1F04B /* SPTExampleGroup.h */,
+				485237A0A58CEBA6EBDC12E4 /* SPTExampleGroup.m */,
+				1A24736442D0E868E5E745EA /* SPTSharedExampleGroups.h */,
+				6BEB2AA8A7FDBA5AECA0445D /* SPTSharedExampleGroups.m */,
+				7055E818F26EB8324076D3B6 /* SPTSpec.h */,
+				118A5B46065960F1827B9B1E /* SPTSpec.m */,
+				BB7AF45A08D750DC03A5F17C /* SPTTestSuite.h */,
+				80A8F36BE17C17BD33B6BBA7 /* SPTTestSuite.m */,
+				0E497DD09893EFA516046E6D /* Specta.h */,
+				3595726E2B34024631F6D092 /* SpectaDSL.h */,
+				F0C3EE366B9CFF11C72D0E35 /* SpectaDSL.m */,
+				1F0E458D3E9590BA5A6C1342 /* SpectaTypes.h */,
+				627DF5DF555915102A03CB83 /* SpectaUtility.h */,
+				F150F2B4A2913CD1C3F549CA /* SpectaUtility.m */,
+				5DD302AD164AB463118EAB35 /* XCTest+Private.h */,
+				310E30B886FED877DDE38E8A /* XCTestCase+Specta.h */,
+				83FD8344C0FB1D20DCC1BF61 /* XCTestCase+Specta.m */,
+				6C35984D2774021D71462C85 /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		9BD9C5DC3DE598768F6D38C1 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				044D0205EF4BC7DA8A289BB4 /* EXPBlockDefinedMatcher.h */,
+				C8EF9A209F353634BC198861 /* EXPBlockDefinedMatcher.m */,
+				B9AE9FD08F6FDFA2E6029686 /* EXPDefines.h */,
+				B6C1F3BDC4EF8342D61A7F2C /* EXPDoubleTuple.h */,
+				3397E0891B469E9EC25E1ED0 /* EXPDoubleTuple.m */,
+				E77FB8C210871ADF2B2E8302 /* EXPExpect.h */,
+				6CA03AC1AFEB1EF9FD0E79E6 /* EXPExpect.m */,
+				1594ECB0394DDD693F9DCDB8 /* EXPFloatTuple.h */,
+				389E43D62CAEABAD6A5FAFD5 /* EXPFloatTuple.m */,
+				FB3BF9FA5116BCE3B72F217E /* EXPMatcher.h */,
+				7AB60087DBD4E9DD951111FD /* EXPMatcherHelpers.h */,
+				8DD28B3C859C7F37EB136DAC /* EXPMatcherHelpers.m */,
+				4287C93237C704DD3F9C02A1 /* EXPMatchers.h */,
+				D4F8F90CB41097CE530230CA /* EXPMatchers+beCloseTo.h */,
+				5C890C65C013655FD876E70A /* EXPMatchers+beCloseTo.m */,
+				618CC66B0FE293A79E8A1F2D /* EXPMatchers+beFalsy.h */,
+				2BF9CFB4421BF8014786219F /* EXPMatchers+beFalsy.m */,
+				72971AC868293ECEF950DDBA /* EXPMatchers+beGreaterThan.h */,
+				87E91696C04C34A95A1452B5 /* EXPMatchers+beGreaterThan.m */,
+				C017F12DC556BF13A13F6F44 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				2A199C7BED26110FA12DC438 /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				3571C4C6A0A48D97373049C5 /* EXPMatchers+beIdenticalTo.h */,
+				D250D2F9357B5777DDFCE728 /* EXPMatchers+beIdenticalTo.m */,
+				0787E964A662DE8C68B271BD /* EXPMatchers+beInTheRangeOf.h */,
+				0708FA98BF4761A70F50DA6B /* EXPMatchers+beInTheRangeOf.m */,
+				CB4E8024E388A88C8830CADF /* EXPMatchers+beInstanceOf.h */,
+				B40A31AFA0DE28FD867F4DC2 /* EXPMatchers+beInstanceOf.m */,
+				A42A2B629C8165D60CFFF525 /* EXPMatchers+beKindOf.h */,
+				B87F88227075BE3A2F914193 /* EXPMatchers+beKindOf.m */,
+				C27A5FEF4800D1B3850A6302 /* EXPMatchers+beLessThan.h */,
+				B3375F043F4603774AB4024A /* EXPMatchers+beLessThan.m */,
+				EE725A92A86A23E23E8F8EB0 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				10E07F7E14C30D6895599D71 /* EXPMatchers+beLessThanOrEqualTo.m */,
+				E75BD65E0C2F43A101144E99 /* EXPMatchers+beNil.h */,
+				FD7304FDCE0239595DE7C187 /* EXPMatchers+beNil.m */,
+				E4A3748FF0B7BE6AC663482A /* EXPMatchers+beSubclassOf.h */,
+				506697BDDB83C8A626FBF61F /* EXPMatchers+beSubclassOf.m */,
+				3BF3971B24B51081EFFEC03A /* EXPMatchers+beSupersetOf.h */,
+				6CC37EB804C48F13A96A668D /* EXPMatchers+beSupersetOf.m */,
+				D09260843FE2C2180FF4D269 /* EXPMatchers+beTruthy.h */,
+				93447FD0027E86B9027199EB /* EXPMatchers+beTruthy.m */,
+				B52D0BC490433E491DD6B0A1 /* EXPMatchers+beginWith.h */,
+				250EC5D777D20857CE84B1E8 /* EXPMatchers+beginWith.m */,
+				4B5C27FC3ED2D393A670FBE5 /* EXPMatchers+conformTo.h */,
+				8D01ADF32C0A68A9275EB12B /* EXPMatchers+conformTo.m */,
+				8991DC7D81735B116E819794 /* EXPMatchers+contain.h */,
+				624EF6FCDB939704C9189E4E /* EXPMatchers+contain.m */,
+				2BF7512F06B80E59CA5D3DCF /* EXPMatchers+endWith.h */,
+				13DE307BC9961D96C8AC2A79 /* EXPMatchers+endWith.m */,
+				1F7950DD27C762C0C481506C /* EXPMatchers+equal.h */,
+				1237EFA145DE194D57E7FA1D /* EXPMatchers+equal.m */,
+				15DD6757D3CE8B47A124166E /* EXPMatchers+haveCountOf.h */,
+				76D6848FCD956A09750EAF1F /* EXPMatchers+haveCountOf.m */,
+				CC7770ABABB02E0B3D8C9433 /* EXPMatchers+postNotification.h */,
+				B831F50486F0F8BA70206EA1 /* EXPMatchers+postNotification.m */,
+				B9546E5FFE91BEEDBF86E39B /* EXPMatchers+raise.h */,
+				2F645FFF018259006A72BC9C /* EXPMatchers+raise.m */,
+				702E05DB13590EFBB4BA2785 /* EXPMatchers+raiseWithReason.h */,
+				DE286D1C23B0BFAA867B884A /* EXPMatchers+raiseWithReason.m */,
+				453CDBDD5506A47042D9E7A4 /* EXPMatchers+respondTo.h */,
+				A7431EB130DEB66773E772E2 /* EXPMatchers+respondTo.m */,
+				9872896B3F95CF4F744FFADD /* EXPUnsupportedObject.h */,
+				D705AF0A2346D3BA3CC176B1 /* EXPUnsupportedObject.m */,
+				B02EE39865D8D5C2D9C0C872 /* Expecta.h */,
+				6FA8C9B8F414CA014889D49A /* ExpectaObject.h */,
+				D967A5C8D33ACE0424B56D5D /* ExpectaObject.m */,
+				7B466D5090A4A0168E080D39 /* ExpectaSupport.h */,
+				F89A04E88C5E62C767658500 /* ExpectaSupport.m */,
+				C80A6083DE10F55CE162E078 /* NSObject+Expecta.h */,
+				8D8CE583C0F590BB652ADF80 /* NSValue+Expecta.h */,
+				94C964E831C29CB75BFE9E6E /* NSValue+Expecta.m */,
+				7D5954B06BF48B297EE67669 /* Support Files */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		A3286A608B3B3FF06404E0F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				01C2DA590423FDC71CBC8508 /* CoreGraphics.framework */,
+				47DF82E1D7B74A16B8983C3A /* Foundation.framework */,
+				9214D79628307A1A38B3B663 /* MobileCoreServices.framework */,
+				BE4D531F13A8CED87895C9EA /* Security.framework */,
+				257D3E87EA87623B09C48126 /* SystemConfiguration.framework */,
+				6472A1BF7283397509ACE507 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BAB5D42229CADB3C030EC9D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3286A608B3B3FF06404E0F1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED94E3FE2B81AE6ADE97CAC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DD98EB1C775980744C257FFB /* AFNetworking.h */,
+				4551C79F0E723C34D273A405 /* NSURLConnection */,
+				3B1F49BA91FE5CE1C61BE976 /* NSURLSession */,
+				F696EBF9801845FC4BE23333 /* Reachability */,
+				DA4B2F2757A2FEFC38B63BF5 /* Security */,
+				895DA14EE795D3C94104F48F /* Serialization */,
+				5192130EBA41E0F36D15384B /* Support Files */,
+				1D162EB1217B48DD5495BB1D /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DA4B2F2757A2FEFC38B63BF5 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				28416982EAFF47176F3A58BF /* AFSecurityPolicy.h */,
+				7B82DD0B90BA9BBF45219E9A /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		E5DCB14EF0999B19E1866E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E585908D9537D1362C0DCCC1 /* XBPayment.bundle */,
+				B65FD620CC8DCC9EA0360BD1 /* libPods-Tests.a */,
+				254615525FA1EE80A38D53D1 /* libPods-Tests-AFNetworking.a */,
+				61834BA52530226EF641A799 /* libPods-Tests-Expecta.a */,
+				2B0474E2EF1361ED911475EC /* libPods-Tests-Expecta+Snapshots.a */,
+				ABC42EE09770CD7DEDDD1CCC /* libPods-Tests-FBSnapshotTestCase.a */,
+				40D008107DAAB7B79E49923D /* libPods-Tests-Specta.a */,
+				B8B6929CE803002C05EBC8AB /* libPods-Tests-XBPayment.a */,
+				127926A3B131DA74D2F57084 /* libPods-XBPayment.a */,
+				C671C88417B20A4931EF0889 /* libPods-XBPayment-AFNetworking.a */,
+				C850A5CECE8D3C95D9F44AD5 /* libPods-XBPayment-XBPayment.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB7AF7667294F43E33D7DF48 /* XBPayment */ = {
+			isa = PBXGroup;
+			children = (
+				6C2CE7E007D33542EB47BE67 /* XBPWebViewViewController.h */,
+				D5C185687E637ADC2C109C9F /* XBPWebViewViewController.m */,
+				B5494F5A54A9F44267BEBE83 /* XBPayment.h */,
+				1919ACEDBBBCF8344DB908F2 /* XBPayment.m */,
+				3456F431D02C50D932EB44E5 /* XBPaypalExpressCheckout.h */,
+				3C0724F3942ECAB2EF3C754E /* XBPaypalExpressCheckout.m */,
+				A1AAA513C50602CB852A8A1D /* XBPaypalItem.h */,
+				503E0FAE69FFDDDC1D3141DD /* XBPaypalItem.m */,
+				871FB2A8376B28A74602A9FD /* Resources */,
+				005B73D7FAE5EC276433B779 /* Support Files */,
+			);
+			name = XBPayment;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F696EBF9801845FC4BE23333 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				093F169AC72C24D765D84FE8 /* AFNetworkReachabilityManager.h */,
+				6E6F794E9F795FB824985335 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1033E8EE58530CD64834964F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503D2E57067EA7F8B33F2933 /* EXPBlockDefinedMatcher.h in Headers */,
+				B49B44B4AE609249A6FCC393 /* EXPDefines.h in Headers */,
+				A23C76FD84771AC3E926A0EF /* EXPDoubleTuple.h in Headers */,
+				AC09BECCB39AC5F3B84A3737 /* EXPExpect.h in Headers */,
+				5B0ADAB7FE17D6A58D1D161A /* EXPFloatTuple.h in Headers */,
+				AC059114E1EB887EC952CFF0 /* EXPMatcher.h in Headers */,
+				A8AB1347B2B958A5BA1723FB /* EXPMatcherHelpers.h in Headers */,
+				D2BBBA5EC0DD60DBF6974A11 /* EXPMatchers+beCloseTo.h in Headers */,
+				1161A969E290BE3AFE0478D0 /* EXPMatchers+beFalsy.h in Headers */,
+				680E1382AE119D9B2FE4EB4D /* EXPMatchers+beGreaterThan.h in Headers */,
+				317B2A3D4D9D29F6CDC0F1B5 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				B419EF32BCB7F4BBA4A6384C /* EXPMatchers+beIdenticalTo.h in Headers */,
+				F5ED1B8871D49C8CEFEB790C /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				CE8FFCF60F2B289A2A35A807 /* EXPMatchers+beInstanceOf.h in Headers */,
+				2E61B54BEAF27A8ADCE34B7C /* EXPMatchers+beKindOf.h in Headers */,
+				251BE6ECAE852179C937DC5E /* EXPMatchers+beLessThan.h in Headers */,
+				42C5E35CC371C00C115D9532 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				63CFE280E12BE97B1D205B5A /* EXPMatchers+beNil.h in Headers */,
+				F04F158F24017BE8EF7CC5B0 /* EXPMatchers+beSubclassOf.h in Headers */,
+				90A25577AFCBFD87E2438F05 /* EXPMatchers+beSupersetOf.h in Headers */,
+				A574297567DE7451A78B9187 /* EXPMatchers+beTruthy.h in Headers */,
+				F295EDA17290CF4CF8985542 /* EXPMatchers+beginWith.h in Headers */,
+				4235FFE0D0C354AC354F9C52 /* EXPMatchers+conformTo.h in Headers */,
+				B166E729256C7298836FD879 /* EXPMatchers+contain.h in Headers */,
+				C474175B033379466E2BE13A /* EXPMatchers+endWith.h in Headers */,
+				725889B7FAF6412AFC866F06 /* EXPMatchers+equal.h in Headers */,
+				16282B359A39C8BC3DA19CD2 /* EXPMatchers+haveCountOf.h in Headers */,
+				7E5588968C8D7F1FE1CACB0E /* EXPMatchers+postNotification.h in Headers */,
+				77387724B287FFA75EF3E749 /* EXPMatchers+raise.h in Headers */,
+				544FC52713D7DDB60CC0FD5F /* EXPMatchers+raiseWithReason.h in Headers */,
+				C316612DCA8A7FC987966CEF /* EXPMatchers+respondTo.h in Headers */,
+				739D18308DBD641EAB2817B2 /* EXPMatchers.h in Headers */,
+				5F934E44FCC0BFD17B71DA1F /* EXPUnsupportedObject.h in Headers */,
+				78AE495FEE12793FC02D13DE /* Expecta.h in Headers */,
+				3F6939161E1D04534E0790C2 /* ExpectaObject.h in Headers */,
+				66EA43579B4CAAE16E9E5AB4 /* ExpectaSupport.h in Headers */,
+				6E02317848C37B3AA59913E4 /* NSObject+Expecta.h in Headers */,
+				31A413FA1F44D49F3EF53FBA /* NSValue+Expecta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79EA4A4B437590835F3F103B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D222FAFF7A41B4BC8522AD /* EXPMatchers+FBSnapshotTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5B8687278191416D4582FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E60DEA0547009E6EAABCAD2 /* AFHTTPRequestOperation.h in Headers */,
+				FFC154A6A80787F3A8781063 /* AFHTTPRequestOperationManager.h in Headers */,
+				90D66C612A2240B098BA9AAA /* AFHTTPSessionManager.h in Headers */,
+				93E7722944BF00DE897F2AD9 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				AB5D9487CE346ED85E461845 /* AFNetworkReachabilityManager.h in Headers */,
+				C358A62BD5D26A3D28A70E1F /* AFNetworking.h in Headers */,
+				5C61101EE6ED7A9BE8B3E377 /* AFSecurityPolicy.h in Headers */,
+				2B73BCFA8E32705CD9304FD2 /* AFURLConnectionOperation.h in Headers */,
+				F94199C80730CBF0F4290C4A /* AFURLRequestSerialization.h in Headers */,
+				D64F79A8DCE4032538E421F1 /* AFURLResponseSerialization.h in Headers */,
+				9B86E93CF62BB31FD04B1F87 /* AFURLSessionManager.h in Headers */,
+				16409E737A1E4FA4AC1B970F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				4F4AF397FCB6556EE86A93EA /* UIAlertView+AFNetworking.h in Headers */,
+				BDC2BB7A282FF5BC5D618690 /* UIButton+AFNetworking.h in Headers */,
+				FC01600D985C8589447EC05C /* UIImageView+AFNetworking.h in Headers */,
+				6D2BBE3B3FC77A74DDB8FCC3 /* UIKit+AFNetworking.h in Headers */,
+				747D390ADC4CBCEA61C8B3B2 /* UIProgressView+AFNetworking.h in Headers */,
+				7AE0D892575A088134891EB9 /* UIRefreshControl+AFNetworking.h in Headers */,
+				595C7FBB2FD0A335828BC58B /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5FDA953AF9ADF2319F2959 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9B2EE9B4BAD87BA21E0F87 /* FBSnapshotTestCase.h in Headers */,
+				2A266397733177DFA5FA2E3B /* FBSnapshotTestController.h in Headers */,
+				5E3712BEADF61A68AE5EA646 /* UIImage+Compare.h in Headers */,
+				83BB23B9D1CD68CBF9601494 /* UIImage+Diff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA98DA4AD22E31D383CF154A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD7FFDA68A3408488FF7D8E /* AFHTTPRequestOperation.h in Headers */,
+				A13DD84AB57BBBE70981D115 /* AFHTTPRequestOperationManager.h in Headers */,
+				445E30FEF531729EFD6C16E6 /* AFHTTPSessionManager.h in Headers */,
+				EE1CAC92685BF6FB67DE654A /* AFNetworkActivityIndicatorManager.h in Headers */,
+				F281249FD2D794137BF6975D /* AFNetworkReachabilityManager.h in Headers */,
+				35FB7BEB7992A46AD207E67F /* AFNetworking.h in Headers */,
+				4F3D64DA5F61FEC6DDA9DADC /* AFSecurityPolicy.h in Headers */,
+				CF85A9501F8131A859296D0A /* AFURLConnectionOperation.h in Headers */,
+				C7324B76B3C9D4F649EF5639 /* AFURLRequestSerialization.h in Headers */,
+				FA6287603E0BCBE4EE14C7FE /* AFURLResponseSerialization.h in Headers */,
+				EE16890094F84CF9443D796B /* AFURLSessionManager.h in Headers */,
+				056B0598F1F114DF4B6EDEF1 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				051EDB4150B97D2D8FB96BB8 /* UIAlertView+AFNetworking.h in Headers */,
+				7538E87E1FC9CB77444976BF /* UIButton+AFNetworking.h in Headers */,
+				632AD263861D23A179271391 /* UIImageView+AFNetworking.h in Headers */,
+				AFB95ECB7E9DC870910C2A6B /* UIKit+AFNetworking.h in Headers */,
+				E56ABAC91E2EE9D10C139B0B /* UIProgressView+AFNetworking.h in Headers */,
+				7EC38813CC5A6E3AE4C554D4 /* UIRefreshControl+AFNetworking.h in Headers */,
+				4E16FDD50435FC029F0F51F8 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CFF29B7BB8B40DB50BE29E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476CC8333ECD192094FDB81A /* SPTCallSite.h in Headers */,
+				61FB94886F9B3143DB64BB35 /* SPTCompiledExample.h in Headers */,
+				7E91B67A4115740B6BF3509B /* SPTExample.h in Headers */,
+				F3E5504030B0B70DC59AF9F0 /* SPTExampleGroup.h in Headers */,
+				951369E539CD84F3A408AC46 /* SPTSharedExampleGroups.h in Headers */,
+				91E0AA5BA6CA6789C1D5BD8F /* SPTSpec.h in Headers */,
+				2699305A6C529DDDA36E4DB5 /* SPTTestSuite.h in Headers */,
+				4D3DDDD8F65E3C0FCC654307 /* Specta.h in Headers */,
+				C993EE0411E1D15CF215F554 /* SpectaDSL.h in Headers */,
+				8E3FB755B4A37C897790F308 /* SpectaTypes.h in Headers */,
+				2CF00A758EB9BF6FD90C1BEC /* SpectaUtility.h in Headers */,
+				C2630FA7FB831C0297BF48FB /* XCTest+Private.h in Headers */,
+				B89C7E219142A5985D32A206 /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D872F45E6D417A433ACB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6DA2C80C629C3F3F324ACB /* XBPWebViewViewController.h in Headers */,
+				D235153BDF2070A611E6A8CB /* XBPayment.h in Headers */,
+				4C525F56A87C7A513B56D25E /* XBPaypalExpressCheckout.h in Headers */,
+				8B42FCEFCC4AEF9302658CE8 /* XBPaypalItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBBEE55930143A1A1DFACB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED9B9A0C35105188C9F8E2F /* XBPWebViewViewController.h in Headers */,
+				0047D39EEB7E78F6640F6859 /* XBPayment.h in Headers */,
+				B4D83D6B21CC255366B0EB21 /* XBPaypalExpressCheckout.h in Headers */,
+				F414FEC3EC3F1D5C6DC9F9C6 /* XBPaypalItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D97812999167C5768230F2A /* Pods-Tests-XBPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559694B567B45374E7330F2F /* Build configuration list for PBXNativeTarget "Pods-Tests-XBPayment" */;
+			buildPhases = (
+				B17CC18E6BBCC26316E59D9B /* Sources */,
+				75A5F692E12EAD2FE0343531 /* Frameworks */,
+				FBDBBEE55930143A1A1DFACB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FC428846BD8F0B0091F9011 /* PBXTargetDependency */,
+				4C148E246A864AC7F7F474B7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-XBPayment";
+			productName = "Pods-Tests-XBPayment";
+			productReference = B8B6929CE803002C05EBC8AB /* libPods-Tests-XBPayment.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1C48A2359C00AF4EEDA0F795 /* Pods-Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A018061102530A6A53047B9 /* Build configuration list for PBXNativeTarget "Pods-Tests-Expecta" */;
+			buildPhases = (
+				1E067308FC66777C9B650EF0 /* Sources */,
+				BF4FDC32DFFFE5F497A9CFDF /* Frameworks */,
+				1033E8EE58530CD64834964F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-Expecta";
+			productName = "Pods-Tests-Expecta";
+			productReference = 61834BA52530226EF641A799 /* libPods-Tests-Expecta.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		414BD9D4D37DD4B983566B7A /* Pods-Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F279D2DE38E047E2828F2BC /* Build configuration list for PBXNativeTarget "Pods-Tests-Specta" */;
+			buildPhases = (
+				DFF2E10F710BFADAB0AB32EC /* Sources */,
+				532C4B5117D3F00AD4ADC247 /* Frameworks */,
+				B0CFF29B7BB8B40DB50BE29E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-Specta";
+			productName = "Pods-Tests-Specta";
+			productReference = 40D008107DAAB7B79E49923D /* libPods-Tests-Specta.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6663FA65E1F9FB11CA0B8383 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2303018175C216A7B0E4E150 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				B87BCA7CD0B3650F94164748 /* Sources */,
+				D54349436994977EFD0EC2A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B33FA9E1C8B52CA6291947F /* PBXTargetDependency */,
+				D90EC89520D48C7794045D8A /* PBXTargetDependency */,
+				3E346B77B45850D3096FC977 /* PBXTargetDependency */,
+				9B1A9FE2EB5F9B158C0D2D52 /* PBXTargetDependency */,
+				9EB02BAD07EC1745AB40A238 /* PBXTargetDependency */,
+				098624B5E29852A76D5248F8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = B65FD620CC8DCC9EA0360BD1 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7D9FA222E9776043C84A1F02 /* Pods-XBPayment-XBPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5AE4B68B365C6AFE1A5EC18 /* Build configuration list for PBXNativeTarget "Pods-XBPayment-XBPayment" */;
+			buildPhases = (
+				2481A287E633657C4AD9808D /* Sources */,
+				41FDEA112C3D379443771250 /* Frameworks */,
+				F66D872F45E6D417A433ACB8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CCAA300694FA40671767E9D /* PBXTargetDependency */,
+				3948F48C76E6ABEC8DBDE368 /* PBXTargetDependency */,
+			);
+			name = "Pods-XBPayment-XBPayment";
+			productName = "Pods-XBPayment-XBPayment";
+			productReference = C850A5CECE8D3C95D9F44AD5 /* libPods-XBPayment-XBPayment.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		924930DF0FA695F017CAC561 /* Pods-XBPayment-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CC0A476CD2151D4A0A6626 /* Build configuration list for PBXNativeTarget "Pods-XBPayment-AFNetworking" */;
+			buildPhases = (
+				D1C4C8E5ED6F03CDA656B3B0 /* Sources */,
+				3854DE2D7DA2ABA24ADD5C44 /* Frameworks */,
+				7A5B8687278191416D4582FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-XBPayment-AFNetworking";
+			productName = "Pods-XBPayment-AFNetworking";
+			productReference = C671C88417B20A4931EF0889 /* libPods-XBPayment-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9B9D81730A50DBB7F3BA813B /* Pods-XBPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54201C65D8BD6A30F0632FFE /* Build configuration list for PBXNativeTarget "Pods-XBPayment" */;
+			buildPhases = (
+				D763891944385D4BF177925E /* Sources */,
+				7769F023F32BFFB9F6701BBD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68F88CF62D47A0AEFC78C506 /* PBXTargetDependency */,
+				F4DDDE8A2E3B98CE802C8B88 /* PBXTargetDependency */,
+			);
+			name = "Pods-XBPayment";
+			productName = "Pods-XBPayment";
+			productReference = 127926A3B131DA74D2F57084 /* libPods-XBPayment.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA068A9E9332A4D7E841BE96 /* XBPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CFAA2BF47E0727486644D4 /* Build configuration list for PBXNativeTarget "XBPayment" */;
+			buildPhases = (
+				0EDAD8786CD4AEB875BC9E28 /* Sources */,
+				75279B14BE97EB510618E9BE /* Frameworks */,
+				86BA42548AA781EF683969F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XBPayment;
+			productName = XBPayment;
+			productReference = E585908D9537D1362C0DCCC1 /* XBPayment.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E4EF16F9C21DD801F345A793 /* Pods-Tests-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12977B74F0D5E8354219031 /* Build configuration list for PBXNativeTarget "Pods-Tests-AFNetworking" */;
+			buildPhases = (
+				51DBFA584BDCC34F838241B5 /* Sources */,
+				02D927B8365E69A088EEF099 /* Frameworks */,
+				AA98DA4AD22E31D383CF154A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-AFNetworking";
+			productName = "Pods-Tests-AFNetworking";
+			productReference = 254615525FA1EE80A38D53D1 /* libPods-Tests-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E57D08C9A4AE63DC1CD7207D /* Pods-Tests-FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8890E96D3EFA3E05BE9CCACA /* Build configuration list for PBXNativeTarget "Pods-Tests-FBSnapshotTestCase" */;
+			buildPhases = (
+				2C041E9F7824C5F64E251F79 /* Sources */,
+				FB7794D6BB85DEA3918BEE0A /* Frameworks */,
+				9F5FDA953AF9ADF2319F2959 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-FBSnapshotTestCase";
+			productName = "Pods-Tests-FBSnapshotTestCase";
+			productReference = ABC42EE09770CD7DEDDD1CCC /* libPods-Tests-FBSnapshotTestCase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0460A466CD79EC26ABDDFCB /* Pods-Tests-Expecta+Snapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518B52AF7F290098A7D2829E /* Build configuration list for PBXNativeTarget "Pods-Tests-Expecta+Snapshots" */;
+			buildPhases = (
+				71B791456FA439040B97C535 /* Sources */,
+				EC270A9A7A77559B2C307EC8 /* Frameworks */,
+				79EA4A4B437590835F3F103B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA695B2910373B227218E074 /* PBXTargetDependency */,
+				6EBB152A545A3A815C006929 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-Expecta+Snapshots";
+			productName = "Pods-Tests-Expecta+Snapshots";
+			productReference = 2B0474E2EF1361ED911475EC /* libPods-Tests-Expecta+Snapshots.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94B606D675ECC0D694EC1F70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 67637126B26E3D8A634DDDA9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A802AD7F4C99FE14A777178;
+			productRefGroup = E5DCB14EF0999B19E1866E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6663FA65E1F9FB11CA0B8383 /* Pods-Tests */,
+				E4EF16F9C21DD801F345A793 /* Pods-Tests-AFNetworking */,
+				1C48A2359C00AF4EEDA0F795 /* Pods-Tests-Expecta */,
+				F0460A466CD79EC26ABDDFCB /* Pods-Tests-Expecta+Snapshots */,
+				E57D08C9A4AE63DC1CD7207D /* Pods-Tests-FBSnapshotTestCase */,
+				414BD9D4D37DD4B983566B7A /* Pods-Tests-Specta */,
+				0D97812999167C5768230F2A /* Pods-Tests-XBPayment */,
+				9B9D81730A50DBB7F3BA813B /* Pods-XBPayment */,
+				924930DF0FA695F017CAC561 /* Pods-XBPayment-AFNetworking */,
+				7D9FA222E9776043C84A1F02 /* Pods-XBPayment-XBPayment */,
+				DA068A9E9332A4D7E841BE96 /* XBPayment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86BA42548AA781EF683969F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EDAD8786CD4AEB875BC9E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E067308FC66777C9B650EF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B74D5135BC1732A1795AD /* EXPBlockDefinedMatcher.m in Sources */,
+				064BC6CF7DBB16D5B1C3A119 /* EXPDoubleTuple.m in Sources */,
+				08B965031CC641E631F49943 /* EXPExpect.m in Sources */,
+				9C0C3F52B3A31FD48ADFFCCA /* EXPFloatTuple.m in Sources */,
+				6615E0FE5023426D5F9160BF /* EXPMatcherHelpers.m in Sources */,
+				B2C1D51DAEF477C0E567C971 /* EXPMatchers+beCloseTo.m in Sources */,
+				F288BD3AF31FEBE483AA4C61 /* EXPMatchers+beFalsy.m in Sources */,
+				5F0040B836B99F1E79E3A404 /* EXPMatchers+beGreaterThan.m in Sources */,
+				2C0DD71D3D40CEFC53788918 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				204A4258C4E9FB042E16E6AC /* EXPMatchers+beIdenticalTo.m in Sources */,
+				37E10ED3DD5C0A8E970937F4 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				977A351961A909C9C3DF2CB2 /* EXPMatchers+beInstanceOf.m in Sources */,
+				4C316CA5E0393E445E0E9D35 /* EXPMatchers+beKindOf.m in Sources */,
+				2D96698246D914BC66B25AE9 /* EXPMatchers+beLessThan.m in Sources */,
+				921E01BF1F6EA6B3DA2F969E /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				42CC7393F51FB43BE9243AE7 /* EXPMatchers+beNil.m in Sources */,
+				904C87DA54F209EA45029E8D /* EXPMatchers+beSubclassOf.m in Sources */,
+				3ED0E1311626FB145BEE3039 /* EXPMatchers+beSupersetOf.m in Sources */,
+				821CCD65F285063F8B52E769 /* EXPMatchers+beTruthy.m in Sources */,
+				6382843F4D3B671D4AEFE694 /* EXPMatchers+beginWith.m in Sources */,
+				5205D0CADD7372C3003F6421 /* EXPMatchers+conformTo.m in Sources */,
+				24D4B96700A9DE3BBB13E6C7 /* EXPMatchers+contain.m in Sources */,
+				00E5DC7E7A65C93A4AF27695 /* EXPMatchers+endWith.m in Sources */,
+				298C25B5148EFBE40DD514A8 /* EXPMatchers+equal.m in Sources */,
+				38D112D661E2CC7099914BF8 /* EXPMatchers+haveCountOf.m in Sources */,
+				36128BD55A7AFA6727BEA931 /* EXPMatchers+postNotification.m in Sources */,
+				856D780E4D028877AD602590 /* EXPMatchers+raise.m in Sources */,
+				A2F19BF678B6AACE5730037B /* EXPMatchers+raiseWithReason.m in Sources */,
+				F2278125D15491604570707D /* EXPMatchers+respondTo.m in Sources */,
+				BB8AC363C18F1F78F762D69F /* EXPUnsupportedObject.m in Sources */,
+				9FC17F915FF8EDFF75857D79 /* ExpectaObject.m in Sources */,
+				39538CD118C5ABDAF0907C21 /* ExpectaSupport.m in Sources */,
+				072C4923941DDB26684BEA9D /* NSValue+Expecta.m in Sources */,
+				7257846ADD610D63B62265B3 /* Pods-Tests-Expecta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2481A287E633657C4AD9808D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D79AFF83C47554F678B07A /* Pods-XBPayment-XBPayment-dummy.m in Sources */,
+				E0274617ACB8441C672B8D7D /* XBPWebViewViewController.m in Sources */,
+				1A3000BB449C976A7231758A /* XBPayment.m in Sources */,
+				AF8E95A22E54995919F8EB4B /* XBPaypalExpressCheckout.m in Sources */,
+				D5D4D588B6713FCCB895414E /* XBPaypalItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C041E9F7824C5F64E251F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B453CDD21DD46DA58027313 /* FBSnapshotTestCase.m in Sources */,
+				F9B3C336B9918E06BABD1145 /* FBSnapshotTestController.m in Sources */,
+				02854F8ECBF12C0212B31C01 /* Pods-Tests-FBSnapshotTestCase-dummy.m in Sources */,
+				653EC46FA48B93BC8D41B0BD /* UIImage+Compare.m in Sources */,
+				52B0A23B5B78C719108E0DD3 /* UIImage+Diff.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DBFA584BDCC34F838241B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FC52D9CF0ABD690CE3FB9E /* AFHTTPRequestOperation.m in Sources */,
+				DBCF7059422C31FF7BF1BABF /* AFHTTPRequestOperationManager.m in Sources */,
+				B63A4934B4ECCFA698406D08 /* AFHTTPSessionManager.m in Sources */,
+				18B1CF3DE153F888399CD504 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				E669216F796D9E398698B445 /* AFNetworkReachabilityManager.m in Sources */,
+				C4D42103F899AEE5A4844F93 /* AFSecurityPolicy.m in Sources */,
+				D7253225DB80D790BA0077C0 /* AFURLConnectionOperation.m in Sources */,
+				9F3BDF6E77461892A8A3D70D /* AFURLRequestSerialization.m in Sources */,
+				F90967D43D1B41FC921C862B /* AFURLResponseSerialization.m in Sources */,
+				812C59DD20A47DE49BA51A8A /* AFURLSessionManager.m in Sources */,
+				3B45D3D0D8D437B7DADACD6B /* Pods-Tests-AFNetworking-dummy.m in Sources */,
+				8E03FE66A353BAEDFC1B3D50 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				6476F074ACAA1F86510F5054 /* UIAlertView+AFNetworking.m in Sources */,
+				49C221F09C76732AA68D5463 /* UIButton+AFNetworking.m in Sources */,
+				6F53667BC25E27C9D00F1633 /* UIImageView+AFNetworking.m in Sources */,
+				58068FC09E954ED0AB3847E7 /* UIProgressView+AFNetworking.m in Sources */,
+				F34F813AFCC73C6089E012A2 /* UIRefreshControl+AFNetworking.m in Sources */,
+				68CE01FDDAEF9ECD009EAEAC /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B791456FA439040B97C535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A3077ED20C7E1B73217B4 /* EXPMatchers+FBSnapshotTest.m in Sources */,
+				4846D70B0DEB05476A1C31AE /* Pods-Tests-Expecta+Snapshots-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17CC18E6BBCC26316E59D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7046FA19669A2014ABB270CA /* Pods-Tests-XBPayment-dummy.m in Sources */,
+				5324038CA719106224812BD7 /* XBPWebViewViewController.m in Sources */,
+				E22BD8AC5952B82FF0DFAC05 /* XBPayment.m in Sources */,
+				AEAC21FE202F23C6371D08BF /* XBPaypalExpressCheckout.m in Sources */,
+				343E43006A7653D755E06CC2 /* XBPaypalItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B87BCA7CD0B3650F94164748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2CF2F8057C4E3EB92FF6E7 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4C8E5ED6F03CDA656B3B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1B912F4739CD0D476191D2 /* AFHTTPRequestOperation.m in Sources */,
+				AF873B0615894A6B30BCBC92 /* AFHTTPRequestOperationManager.m in Sources */,
+				E5F775265CAAC9E21980CBC0 /* AFHTTPSessionManager.m in Sources */,
+				F24A8FDF6864BD1AACF4F918 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				A4D87B30F7325619B1D3D300 /* AFNetworkReachabilityManager.m in Sources */,
+				E05A59ED942BA27FCB15D47A /* AFSecurityPolicy.m in Sources */,
+				BFCC1FBEF6BF47DCD123197D /* AFURLConnectionOperation.m in Sources */,
+				52627BCF85AA21E6F241D66A /* AFURLRequestSerialization.m in Sources */,
+				D11979059ECC29FE3892EA12 /* AFURLResponseSerialization.m in Sources */,
+				E624D7D2C33122BB595F3B4B /* AFURLSessionManager.m in Sources */,
+				2D494B1C35682392870BC84E /* Pods-XBPayment-AFNetworking-dummy.m in Sources */,
+				E0877FD6A8E3E95ECA9AC072 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				CE0D704906C046EDED0F06A3 /* UIAlertView+AFNetworking.m in Sources */,
+				55B931D0A570BA7D5B6D1E3D /* UIButton+AFNetworking.m in Sources */,
+				227918644AE7DCF083654143 /* UIImageView+AFNetworking.m in Sources */,
+				0EAFEE110FC6990C98C47683 /* UIProgressView+AFNetworking.m in Sources */,
+				6ACE4F49AC5FC16157CE64E8 /* UIRefreshControl+AFNetworking.m in Sources */,
+				D2977421E7FA024E925EF8FD /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D763891944385D4BF177925E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E842FA42D0A4561575F4E1A4 /* Pods-XBPayment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF2E10F710BFADAB0AB32EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA4584EC585280855B48BD6 /* Pods-Tests-Specta-dummy.m in Sources */,
+				4BACEFDBF6AB408FD4A7DF86 /* SPTCallSite.m in Sources */,
+				98D1A3DDD415D74CCF9B5228 /* SPTCompiledExample.m in Sources */,
+				1F2E77BF49952E6CFBD728F5 /* SPTExample.m in Sources */,
+				00A6EC0D66B5B12F15065BF1 /* SPTExampleGroup.m in Sources */,
+				D946FF4A192FC32D776AE0D5 /* SPTSharedExampleGroups.m in Sources */,
+				4B011C1A0D3A05266AEDBAFE /* SPTSpec.m in Sources */,
+				3578017D1EA308A38C1AC378 /* SPTTestSuite.m in Sources */,
+				7ACDFC20B7090F80F8BF854E /* SpectaDSL.m in Sources */,
+				B17A005AEFB762A18E217575 /* SpectaUtility.m in Sources */,
+				C39C7B467ADE66DBA8D3CA4A /* XCTestCase+Specta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		098624B5E29852A76D5248F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D97812999167C5768230F2A /* Pods-Tests-XBPayment */;
+			targetProxy = 0AEFBFC22056920308B45C63 /* PBXContainerItemProxy */;
+		};
+		0FC428846BD8F0B0091F9011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4EF16F9C21DD801F345A793 /* Pods-Tests-AFNetworking */;
+			targetProxy = F7528C1867244A7D524C2185 /* PBXContainerItemProxy */;
+		};
+		3948F48C76E6ABEC8DBDE368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA068A9E9332A4D7E841BE96 /* XBPayment */;
+			targetProxy = 78472A07E9372013FE012194 /* PBXContainerItemProxy */;
+		};
+		3E346B77B45850D3096FC977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0460A466CD79EC26ABDDFCB /* Pods-Tests-Expecta+Snapshots */;
+			targetProxy = AA4C95D06DF19E3C5F2E25D5 /* PBXContainerItemProxy */;
+		};
+		4C148E246A864AC7F7F474B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA068A9E9332A4D7E841BE96 /* XBPayment */;
+			targetProxy = 26FDA313C133B109DB98D60A /* PBXContainerItemProxy */;
+		};
+		68F88CF62D47A0AEFC78C506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924930DF0FA695F017CAC561 /* Pods-XBPayment-AFNetworking */;
+			targetProxy = FDE8074EF43CA37B79F10331 /* PBXContainerItemProxy */;
+		};
+		6EBB152A545A3A815C006929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57D08C9A4AE63DC1CD7207D /* Pods-Tests-FBSnapshotTestCase */;
+			targetProxy = F0D9F337AA65071069D1944A /* PBXContainerItemProxy */;
+		};
+		8CCAA300694FA40671767E9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924930DF0FA695F017CAC561 /* Pods-XBPayment-AFNetworking */;
+			targetProxy = 56A2C9C197E0F61781C6DE8A /* PBXContainerItemProxy */;
+		};
+		9B1A9FE2EB5F9B158C0D2D52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57D08C9A4AE63DC1CD7207D /* Pods-Tests-FBSnapshotTestCase */;
+			targetProxy = C77EBB51CA3773F7F3722D4D /* PBXContainerItemProxy */;
+		};
+		9B33FA9E1C8B52CA6291947F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4EF16F9C21DD801F345A793 /* Pods-Tests-AFNetworking */;
+			targetProxy = 0DF5794230313C2508D50A7E /* PBXContainerItemProxy */;
+		};
+		9EB02BAD07EC1745AB40A238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 414BD9D4D37DD4B983566B7A /* Pods-Tests-Specta */;
+			targetProxy = 255F52A2BFCE09EA1D4C3BE2 /* PBXContainerItemProxy */;
+		};
+		AA695B2910373B227218E074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C48A2359C00AF4EEDA0F795 /* Pods-Tests-Expecta */;
+			targetProxy = DC6986217046426D1E26ADA0 /* PBXContainerItemProxy */;
+		};
+		D90EC89520D48C7794045D8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C48A2359C00AF4EEDA0F795 /* Pods-Tests-Expecta */;
+			targetProxy = B2E3ED1AD1C18A290FA6AD5F /* PBXContainerItemProxy */;
+		};
+		F4DDDE8A2E3B98CE802C8B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D9FA222E9776043C84A1F02 /* Pods-XBPayment-XBPayment */;
+			targetProxy = 8C3A2D907151D67197C56DE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		048EC63D6683BB1968392BE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B04DC0997953DF752DFEA2A /* Pods-Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Expecta/Pods-Tests-Expecta-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093B7E1A66C7279881C006BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A8074BDC94A38FD89D336F /* Pods-Tests-XBPayment-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-XBPayment/Pods-Tests-XBPayment-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0C2F1B6E84CA654C7B9A5C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8F183F2F6119C5B1159527 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F900EAB8E70E57C7E06DF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E973243891CA65EF56B27343 /* Pods-Tests-Expecta+Snapshots-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Expecta+Snapshots/Pods-Tests-Expecta+Snapshots-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		21A8835E0ED244A376105E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		28DD0628349F3FBD033A5894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E973243891CA65EF56B27343 /* Pods-Tests-Expecta+Snapshots-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Expecta+Snapshots/Pods-Tests-Expecta+Snapshots-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29B3C91DF8C53512E302EE39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4C660AB160CD689D403550D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B04DC0997953DF752DFEA2A /* Pods-Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Expecta/Pods-Tests-Expecta-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5CF5DB33C4AC0AE5C6DC97D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D06F7EA7F66F194DF30F406 /* Pods-Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-FBSnapshotTestCase/Pods-Tests-FBSnapshotTestCase-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		603C3F581CCCBA4E94C5AE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4648F20D48B354EC269F45 /* Pods-XBPayment.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6BD0CD6B2E4DE7AE5A7DA687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F151EC810C5ADBF57516BD7A /* Pods-XBPayment-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XBPayment-AFNetworking/Pods-XBPayment-AFNetworking-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		75ECF51E8927DED112995C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D35769B81D301AB44AA40E /* Pods-XBPayment-XBPayment-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XBPayment-XBPayment/Pods-XBPayment-XBPayment-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E4B3F12B90F75D536121106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D35769B81D301AB44AA40E /* Pods-XBPayment-XBPayment-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XBPayment-XBPayment/Pods-XBPayment-XBPayment-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8CBADDE4DBC2A2B1FE0C9FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F151EC810C5ADBF57516BD7A /* Pods-XBPayment-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XBPayment-AFNetworking/Pods-XBPayment-AFNetworking-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C1297CC7720A748F55288C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97E116043434BFD2EE12CCB /* Pods-Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Specta/Pods-Tests-Specta-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A65601ABA77C0D4E287143DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C77B15332A0436CEF795C2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2019FEDB9FDFDB3780908668 /* Pods-Tests-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-AFNetworking/Pods-Tests-AFNetworking-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7959FFF37BACAACE11C2956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D06F7EA7F66F194DF30F406 /* Pods-Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-FBSnapshotTestCase/Pods-Tests-FBSnapshotTestCase-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D600E2E362731BAC3D07793F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE112CFE4D95BB5967130243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A8074BDC94A38FD89D336F /* Pods-Tests-XBPayment-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-XBPayment/Pods-Tests-XBPayment-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF35BD81F1D0762DF246BAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2019FEDB9FDFDB3780908668 /* Pods-Tests-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-AFNetworking/Pods-Tests-AFNetworking-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F114997AB75ED5B645357D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80223504FFD102AD20B80C2E /* Pods-XBPayment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F156DFA25B5337D5AE7C37FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729CE321A98440B53609EB37 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1EB7EE9335D69152D420C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97E116043434BFD2EE12CCB /* Pods-Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-Specta/Pods-Tests-Specta-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2303018175C216A7B0E4E150 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F156DFA25B5337D5AE7C37FF /* Debug */,
+				0C2F1B6E84CA654C7B9A5C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F279D2DE38E047E2828F2BC /* Build configuration list for PBXNativeTarget "Pods-Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EB7EE9335D69152D420C0F /* Debug */,
+				9C1297CC7720A748F55288C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518B52AF7F290098A7D2829E /* Build configuration list for PBXNativeTarget "Pods-Tests-Expecta+Snapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F900EAB8E70E57C7E06DF8E /* Debug */,
+				28DD0628349F3FBD033A5894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54201C65D8BD6A30F0632FFE /* Build configuration list for PBXNativeTarget "Pods-XBPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				603C3F581CCCBA4E94C5AE18 /* Debug */,
+				F114997AB75ED5B645357D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559694B567B45374E7330F2F /* Build configuration list for PBXNativeTarget "Pods-Tests-XBPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093B7E1A66C7279881C006BA /* Debug */,
+				DE112CFE4D95BB5967130243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67637126B26E3D8A634DDDA9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21A8835E0ED244A376105E48 /* Debug */,
+				D600E2E362731BAC3D07793F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A018061102530A6A53047B9 /* Build configuration list for PBXNativeTarget "Pods-Tests-Expecta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C660AB160CD689D403550D9 /* Debug */,
+				048EC63D6683BB1968392BE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8890E96D3EFA3E05BE9CCACA /* Build configuration list for PBXNativeTarget "Pods-Tests-FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7959FFF37BACAACE11C2956 /* Debug */,
+				5CF5DB33C4AC0AE5C6DC97D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12977B74F0D5E8354219031 /* Build configuration list for PBXNativeTarget "Pods-Tests-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF35BD81F1D0762DF246BAAE /* Debug */,
+				C77B15332A0436CEF795C2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CC0A476CD2151D4A0A6626 /* Build configuration list for PBXNativeTarget "Pods-XBPayment-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD0CD6B2E4DE7AE5A7DA687 /* Debug */,
+				8CBADDE4DBC2A2B1FE0C9FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CFAA2BF47E0727486644D4 /* Build configuration list for PBXNativeTarget "XBPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B3C91DF8C53512E302EE39 /* Debug */,
+				A65601ABA77C0D4E287143DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AE4B68B365C6AFE1A5EC18 /* Build configuration list for PBXNativeTarget "Pods-XBPayment-XBPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4B3F12B90F75D536121106 /* Debug */,
+				75ECF51E8927DED112995C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94B606D675ECC0D694EC1F70 /* Project object */;
+}

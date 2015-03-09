@@ -7,13 +7,22 @@
 //
 
 #import "XBPAppDelegate.h"
+#import <XBPayment.h>
 
 @implementation XBPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self setupPaypal];
     return YES;
+}
+
+- (void)setupPaypal
+{
+    [XBPayment sharedInstance].apiUser = @"xuanbinh912_api1.gmail.com";
+    [XBPayment sharedInstance].apiPassword = @"8XXPQ39ELSEPKKT6";
+    [XBPayment sharedInstance].apiSignature = @"AFcWxV21C7fd0v3bYYYRCpSSRl31A-wR.jHMwBfEld8Jqsj-0yF08KUl";
+    [XBPayment sharedInstance].brandname = @"99closets";
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -42,5 +51,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - Private Method
 
 @end
