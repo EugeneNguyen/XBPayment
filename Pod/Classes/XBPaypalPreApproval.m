@@ -130,6 +130,49 @@
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
 }
 
+- (void)startCapturePaymentTo:(NSString *)receiverEmail amount:(float)amount withCompletionBlock:(XBPPaypalPreapprovalCompletion)completion
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager.requestSerializer setValue:[XBPayment sharedInstance].apiUser forHTTPHeaderField:@"X-PAYPAL-SECURITY-USERID"];
+    [manager.requestSerializer setValue:[XBPayment sharedInstance].apiPassword forHTTPHeaderField:@"X-PAYPAL-SECURITY-PASSWORD"];
+    [manager.requestSerializer setValue:[XBPayment sharedInstance].apiSignature forHTTPHeaderField:@"X-PAYPAL-SECURITY-SIGNATURE"];
+    [manager.requestSerializer setValue:@"NV" forHTTPHeaderField:@"X-PAYPAL-REQUEST-DATA-FORMAT"];
+    [manager.requestSerializer setValue:@"NV" forHTTPHeaderField:@"X-PAYPAL-RESPONSE-DATA-FORMAT"];
+    if ([XBPayment sharedInstance].isSandboxMode || ![XBPayment sharedInstance].apiAppID)
+    {
+        [manager.requestSerializer setValue:@"APP-80W284485P519543T" forHTTPHeaderField:@"X-PAYPAL-APPLICATION-ID"];
+    }
+    else
+    {
+        [manager.requestSerializer setValue:[XBPayment sharedInstance].apiAppID forHTTPHeaderField:@"X-PAYPAL-APPLICATION-ID"];
+    }
+    
+    NSDictionary *postParams = @{@"actionType": @"PAY",
+                                 @"currencyCode": apiCurrency,
+                                 @"feesPayer": @"EACHRECEIVER",
+                                 @"memo": @"Example",
+                                 @"preapprovalKey": apiPreapprovalKey,
+                                 @"receiverList.receiver(0).amount": @(amount),
+                                 @"receiverList.receiver(0).email": receiverEmail,
+                                 @"senderEmail": apiSenderEmail,
+                                 @"returnUrl": apiReturnURL,
+                                 @"cancelUrl": apiCancelURL,
+                                 @"requestEnvelope.errorLanguage": @"en_US"};
+    
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start CapturePreapproval: %@", postParams);
+    AFHTTPRequestOperation *operation = [manager POST:@"https://svcs.sandbox.paypal.com/AdaptivePayments/Pay" parameters:postParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSDictionary *result = [operation.responseString nvObject];
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  CapturePreapproval: %@", result);
+        completion(result, nil);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error CapturePreapproval: %@", error);
+        completion(nil, error);
+    }];
+    operation.responseSerializer = [AFCompoundResponseSerializer serializer];
+}
+
 - (void)openBrowser
 {
     NSString *url;

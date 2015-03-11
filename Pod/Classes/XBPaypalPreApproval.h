@@ -39,4 +39,6 @@ typedef void (^XBPPaypalPreapprovalCompletion)(NSDictionary *result, NSError * e
 - (void)startSetupPreApproval;
 - (void)startGetPreApprovalDetails;
 
+- (void)startCapturePaymentTo:(NSString *)receiverEmail amount:(float)amount withCompletionBlock:(XBPPaypalPreapprovalCompletion)completion;
+
 @end
