@@ -25,7 +25,7 @@ PODS:
     - Expecta
     - FBSnapshotTestCase
   - FBSnapshotTestCase (1.5)
-  - Specta (0.3.2)
+  - Specta (0.4.0)
   - XBPayment (0.1.0):
     - AFNetworking (~> 2.3)
 
@@ -45,7 +45,7 @@ SPEC CHECKSUMS:
   Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
   Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
   FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
-  Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
-  XBPayment: 83add30211375d6efb0ea761ace24096bffdff40
+  Specta: 1df326d6ec48603c77f507a0ab1f89ad2df1c582
+  XBPayment: 1ba269eaee854c88b5e30d4eda7931cb3039f4f5
 
 COCOAPODS: 0.34.4
