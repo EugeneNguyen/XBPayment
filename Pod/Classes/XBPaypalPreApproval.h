@@ -34,7 +34,7 @@ typedef void (^XBPPaypalPreapprovalCompletion)(NSDictionary *result, NSError * e
 
 @property (nonatomic, copy) XBPPaypalPreapprovalCompletion completionBlock;
 
-- (void)startWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion;
+- (void)startWithCompletionBlock:(XBPPaypalPreapprovalCompletion)completion;
 
 - (void)startSetupPreApproval;
 - (void)startGetPreApprovalDetails;
