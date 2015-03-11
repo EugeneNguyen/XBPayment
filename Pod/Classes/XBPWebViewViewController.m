@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    webView.scalesPageToFit = YES;
     [webView loadRequest:[NSURLRequest requestWithURL:self.url]];
     webView.delegate = self.delegate;
     [self.view addSubview:webView];

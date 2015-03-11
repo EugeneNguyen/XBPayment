@@ -17,6 +17,7 @@ static XBPayment *__sharedXBPayment = nil;
 @synthesize apiPassword;
 @synthesize apiSignature;
 @synthesize apiVersion;
+@synthesize apiAppID;
 
 @synthesize brandname;
 

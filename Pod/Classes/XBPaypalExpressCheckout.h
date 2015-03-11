@@ -15,18 +15,18 @@ typedef void (^XBPPaypalExpressCheckoutCompletion)(NSDictionary *result, NSError
     
 }
 
-@property (nonatomic, retain) NSString *apiReturnURL;
-@property (nonatomic, retain) NSString *apiCancelURL;
-@property (nonatomic, retain) NSString *apiToken;
-@property (nonatomic, retain) NSString *apiPayerID;
+@property (nonatomic, retain) NSString * apiReturnURL;
+@property (nonatomic, retain) NSString * apiCancelURL;
+@property (nonatomic, retain) NSString * apiToken;
+@property (nonatomic, retain) NSString * apiPayerID;
 
-@property (nonatomic, assign) UIViewController *basedController;
+@property (nonatomic, assign) UIViewController * basedController;
 @property (nonatomic, assign) BOOL isModal;
 @property (nonatomic, retain) NSString * modalCloseTitle;
 
-@property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, retain) NSMutableArray * items;
 
-@property (nonatomic, assign) XBPPaypalExpressCheckoutCompletion completionBlock;
+@property (nonatomic, copy) XBPPaypalExpressCheckoutCompletion completionBlock;
 
 - (void)startWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion;
 

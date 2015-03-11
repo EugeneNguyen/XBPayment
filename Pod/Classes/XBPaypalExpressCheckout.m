@@ -12,13 +12,12 @@
 #import "XBPWebViewViewController.h"
 #import "XBPayment.h"
 #import "XBPaypalItem.h"
+#import "NSString+NVParser.h"
 
 @interface XBPaypalExpressCheckout () <UIWebViewDelegate>
 {
     XBPWebViewViewController *webBrowser;
 }
-
-@property (nonatomic, retain) NSString *host;
 
 @end
 
@@ -34,7 +33,6 @@
 @synthesize modalCloseTitle;
 
 @synthesize items;
-@synthesize host;
 
 @synthesize completionBlock;
 
@@ -52,6 +50,11 @@
 }
 
 #pragma mark - Business method
+
+- (NSString *)serviceURL
+{
+    return [XBPayment sharedInstance].isSandboxMode ? @"https://api-3t.sandbox.paypal.com/nvp" : @"https://api-3t.paypal.com/nvp";
+}
 
 - (void)startWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion
 {
@@ -75,12 +78,15 @@
         [params addEntriesFromDictionary:[item paramsForIndex:i]];
     }
     
-    AFHTTPRequestOperation *operation = [manager POST:@"https://api-3t.sandbox.paypal.com/nvp" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *result = [self parseResult:operation.responseString];
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start SetExpressCheckout: %@", params);
+    AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *result = [operation.responseString nvObject];
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  SetExpressCheckout: %@", result);
         self.apiToken = result[@"TOKEN"];
         [self openBrowser];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error SetExpressCheckout: %@", error);
     }];
     
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
@@ -100,14 +106,16 @@
         XBPaypalItem *item = items[i];
         [params addEntriesFromDictionary:[item paramsForIndex:i]];
     }
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start GetExpressCheckout: %@", params);
     
-    AFHTTPRequestOperation *operation = [manager POST:@"https://api-3t.sandbox.paypal.com/nvp" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *result = [self parseResult:operation.responseString];
-        NSLog(@"%@", result);
+    AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *result = [operation.responseString nvObject];
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  GetExpressCheckout: %@", result);
         
         [self startDoExpressCheckoutPayment];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error GetExpressCheckout: %@", error);
     }];
     
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
@@ -129,11 +137,16 @@
         [params addEntriesFromDictionary:[item paramsForIndex:i]];
     }
     
-    AFHTTPRequestOperation *operation = [manager POST:@"https://api-3t.sandbox.paypal.com/nvp" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *result = [self parseResult:operation.responseString];
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start DoExpressCheckout: %@", params);
+    
+    AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *result = [operation.responseString nvObject];
         completionBlock(result, nil);
+        
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  DoExpressCheckout: %@", result);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error  DoExpressCheckout: %@", error);
     }];
     
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
@@ -141,7 +154,15 @@
 
 - (void)openBrowser
 {
-    NSString *url = [NSString stringWithFormat:@"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&useraction=commit&token=%@", self.apiToken];
+    NSString *url;
+    if ([XBPayment sharedInstance].isSandboxMode)
+    {
+        url = [NSString stringWithFormat:@"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&useraction=commit&token=%@", self.apiToken];
+    }
+    else
+    {
+        url = [NSString stringWithFormat:@"https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&useraction=commit&token=%@", self.apiToken];
+    }
     webBrowser = [[XBPWebViewViewController alloc] init];
     webBrowser.delegate = self;
     webBrowser.url = [NSURL URLWithString:url];
@@ -157,7 +178,7 @@
     }
 }
 
-#pragma mark - TSMiniWebBrowserDelegate
+#pragma mark - WebViewDelegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
@@ -165,13 +186,18 @@
     if ([urlString rangeOfString:self.apiReturnURL].location != NSNotFound)
     {
         NSString *paramsString = [[urlString componentsSeparatedByString:@"?"] lastObject];
-        NSDictionary *params = [self parseResult:paramsString];
+        NSDictionary *params = [paramsString nvObject];
         self.apiPayerID = params[@"PayerID"];
         
         [self startGetExpressCheckoutDetails];
-        [webBrowser dismissViewControllerAnimated:YES completion:^{
-            
-        }];
+        if (isModal)
+        {
+            [webBrowser dismissViewControllerAnimated:YES completion:nil];
+        }
+        else
+        {
+            [self.basedController.navigationController popViewControllerAnimated:YES];
+        }
         return NO;
     }
     else if ([urlString rangeOfString:self.apiCancelURL].location != NSNotFound)
@@ -179,23 +205,6 @@
         
     }
     return YES;
-}
-
-#pragma mark - private method
-
-- (NSDictionary *)parseResult:(NSString *)result
-{
-    NSMutableDictionary *queryStringDictionary = [[NSMutableDictionary alloc] init];
-    NSArray *urlComponents = [result componentsSeparatedByString:@"&"];
-    for (NSString *keyValuePair in urlComponents)
-    {
-        NSArray *pairComponents = [keyValuePair componentsSeparatedByString:@"="];
-        NSString *key = [[pairComponents firstObject] stringByRemovingPercentEncoding];
-        NSString *value = [[pairComponents lastObject] stringByRemovingPercentEncoding];
-        
-        [queryStringDictionary setObject:value forKey:key];
-    }
-    return queryStringDictionary;
 }
 
 @end

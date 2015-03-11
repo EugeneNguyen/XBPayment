@@ -10,4 +10,6 @@
 
 @interface NSString (NVParser)
 
+- (NSDictionary *)nvObject;
+
 @end
