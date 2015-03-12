@@ -27,6 +27,8 @@
 @synthesize apiReturnURL;
 @synthesize apiToken;
 @synthesize apiPayerID;
+@synthesize apiBillingAgreementID;
+@synthesize apiSenderEmail;
 
 @synthesize basedController;
 @synthesize isModal;
@@ -35,6 +37,8 @@
 @synthesize items;
 
 @synthesize completionBlock;
+
+@synthesize method;
 
 - (id)init
 {
@@ -60,6 +64,7 @@
 {
     completionBlock = completion;
     [self startSetExpressCheckout];
+    method = eMEC;
 }
 
 - (void)startSetExpressCheckout
@@ -111,8 +116,8 @@
     AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *result = [operation.responseString nvObject];
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  GetExpressCheckout: %@", result);
-        
-        [self startDoExpressCheckoutPayment];
+        self.apiSenderEmail = result[@"EMAIL"];
+        completionBlock(result, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error GetExpressCheckout: %@", error);
@@ -141,12 +146,74 @@
     
     AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *result = [operation.responseString nvObject];
-        completionBlock(result, nil);
         
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  DoExpressCheckout: %@", result);
+        [self startGetExpressCheckoutDetails];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error  DoExpressCheckout: %@", error);
+    }];
+    
+    operation.responseSerializer = [AFCompoundResponseSerializer serializer];
+}
+
+#pragma mark - Billing Agreement
+
+- (void)startBillingAgreementWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion
+{
+    completionBlock = completion;
+    [self startSetMECBillingAgreement];
+    method = eMECBilling;
+}
+
+- (void)startSetMECBillingAgreement
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSMutableDictionary *params = [@{@"METHOD": @"SetExpressCheckout",
+                                     @"returnUrl": apiReturnURL,
+                                     @"cancelUrl": apiCancelURL,
+                                     @"PAYMENTREQUEST_0_PAYMENTACTION": @"AUTHORIZATION",
+                                     @"PAYMENTREQUEST_0_AMT": @"0",
+                                     @"PAYMENTREQUEST_0_CURRENCYCODE": @"USD",
+                                     @"L_BILLINGTYPE0": @"MerchantInitiatedBilling",
+                                     @"L_BILLINGAGREEMENTDESCRIPTION0": [XBPayment sharedInstance].brandname} mutableCopy];
+    
+    [params addEntriesFromDictionary:[[XBPayment sharedInstance] params]];
+    
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start SetExpressCheckout Billing: %@", params);
+    AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *result = [operation.responseString nvObject];
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  SetExpressCheckout Billing: %@", result);
+        self.apiToken = result[@"TOKEN"];
+        [self openBrowser];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completionBlock(nil, error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error SetExpressCheckout Billing: %@", error);
+    }];
+    
+    operation.responseSerializer = [AFCompoundResponseSerializer serializer];
+}
+
+- (void)startDoMECBillingAgreement
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSMutableDictionary *params = [@{@"METHOD": @"CreateBillingAgreement",
+                                     @"TOKEN": self.apiToken} mutableCopy];
+    
+    [params addEntriesFromDictionary:[[XBPayment sharedInstance] params]];
+    
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start DoExpressCheckout Billing: %@", params);
+    
+    AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *result = [operation.responseString nvObject];
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  DoExpressCheckout Billing: %@", result);
+        self.apiBillingAgreementID = result[@"BILLINGAGREEMENTID"];
+        [self startGetExpressCheckoutDetails];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completionBlock(nil, error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error DoExpressCheckout Billing: %@", error);
     }];
     
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
@@ -157,11 +224,11 @@
     NSString *url;
     if ([XBPayment sharedInstance].isSandboxMode)
     {
-        url = [NSString stringWithFormat:@"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&useraction=commit&token=%@", self.apiToken];
+        url = [NSString stringWithFormat:@"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=%@", self.apiToken];
     }
     else
     {
-        url = [NSString stringWithFormat:@"https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&useraction=commit&token=%@", self.apiToken];
+        url = [NSString stringWithFormat:@"https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=%@", self.apiToken];
     }
     webBrowser = [[XBPWebViewViewController alloc] init];
     webBrowser.delegate = self;
@@ -178,6 +245,7 @@
     }
 }
 
+
 #pragma mark - WebViewDelegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
@@ -189,6 +257,18 @@
         NSDictionary *params = [paramsString nvObject];
         self.apiPayerID = params[@"PayerID"];
         
+        switch (method) {
+            case eMEC:
+                [self startDoExpressCheckoutPayment];
+                break;
+                
+            case eMECBilling:
+                [self startDoMECBillingAgreement];
+                break;
+                
+            default:
+                break;
+        }
         [self startGetExpressCheckoutDetails];
         if (isModal)
         {

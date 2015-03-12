@@ -51,7 +51,7 @@
     item1.paymentAction = @"SALE";
     [express.items addObject:item1];
     
-    [express startWithCompletionBlock:^(NSDictionary *result, NSError *error) {
+    [express startBillingAgreementWithCompletionBlock:^(NSDictionary *result, NSError *error) {
         
     }];
 }
