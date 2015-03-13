@@ -269,7 +269,6 @@
             default:
                 break;
         }
-        [self startGetExpressCheckoutDetails];
         if (isModal)
         {
             [webBrowser dismissViewControllerAnimated:YES completion:nil];

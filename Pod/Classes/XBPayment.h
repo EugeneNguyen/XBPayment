@@ -29,6 +29,8 @@
 
 @property (nonatomic, retain) NSString *apiAppID;
 
+@property (nonatomic, retain) NSString *host;
+
 + (XBPayment *)sharedInstance;
 - (NSDictionary *)params;
 

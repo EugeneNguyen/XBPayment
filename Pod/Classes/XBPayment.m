@@ -7,6 +7,7 @@
 //
 
 #import "XBPayment.h"
+#import "AFNetworking.h"
 
 static XBPayment *__sharedXBPayment = nil;
 
@@ -20,6 +21,7 @@ static XBPayment *__sharedXBPayment = nil;
 @synthesize apiAppID;
 
 @synthesize brandname;
+@synthesize host = _host;
 
 - (id)init
 {
@@ -42,15 +44,36 @@ static XBPayment *__sharedXBPayment = nil;
 
 - (NSDictionary *)params
 {
-    NSMutableDictionary *params = [@{@"USER": [XBPayment sharedInstance].apiUser,
-                                     @"PWD": [XBPayment sharedInstance].apiPassword,
-                                     @"SIGNATURE": [XBPayment sharedInstance].apiSignature,
-                                     @"VERSION": [XBPayment sharedInstance].apiVersion} mutableCopy];
+    NSMutableDictionary *params = [@{@"USER": apiUser,
+                                     @"PWD": apiPassword,
+                                     @"SIGNATURE": apiSignature,
+                                     @"VERSION": apiVersion} mutableCopy];
     if (self.brandname)
     {
         params[@"BRANDNAME"] = self.brandname;
     }
     return params;
+}
+
+- (void)setHost:(NSString *)host
+{
+    _host = host;
+    
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPRequestOperation *operation = [manager POST:[NSString stringWithFormat:@"%@/pluspaypal/services/get_paypal_account", host] parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        apiUser = responseObject[@"api_username"];
+        apiPassword = responseObject[@"api_password"];
+        apiSignature = responseObject[@"api_signature"];
+        apiVersion = responseObject[@"api_version"];
+        apiAppID = responseObject[@"app_id"];
+        isSandboxMode = [responseObject[@"is_sandbox"] boolValue];
+        brandname = responseObject[@"brandname"] ;
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    AFJSONResponseSerializer *serializer = [AFJSONResponseSerializer serializer];
+    serializer.acceptableContentTypes = [serializer.acceptableContentTypes setByAddingObjectsFromArray:@[@"text/html"]];
+    [operation setResponseSerializer:serializer];
 }
 
 @end

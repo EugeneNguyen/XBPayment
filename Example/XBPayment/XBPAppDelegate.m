@@ -19,12 +19,9 @@
 
 - (void)setupPaypal
 {
-    [XBPayment sharedInstance].apiUser = @"xuanbinh912_api1.gmail.com";
-    [XBPayment sharedInstance].apiPassword = @"8XXPQ39ELSEPKKT6";
-    [XBPayment sharedInstance].apiSignature = @"AFcWxV21C7fd0v3bYYYRCpSSRl31A-wR.jHMwBfEld8Jqsj-0yF08KUl";
+    [XBPayment sharedInstance].host = @"http://ciplustest.libre.com.vn";
     [XBPayment sharedInstance].brandname = @"99closets";
     [XBPayment sharedInstance].isDebugMode = YES;
-    [XBPayment sharedInstance].isSandboxMode = YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
