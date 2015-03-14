@@ -11,6 +11,7 @@
 #import "XBPayment.h"
 #import "NSString+NVParser.h"
 #import "XBPWebViewViewController.h"
+#import "XBMobile.h"
 
 @interface XBPaypalPreApproval () <UIWebViewDelegate>
 {
@@ -70,6 +71,7 @@
         [manager.requestSerializer setValue:[XBPayment sharedInstance].apiAppID forHTTPHeaderField:@"X-PAYPAL-APPLICATION-ID"];
     }
     
+    [self showHUD:XBText(@"Preparing", @"XBPayment")];
     NSDictionary *postParams = @{@"returnUrl": self.apiReturnURL,
                                  @"cancelUrl": self.apiCancelURL,
                                  @"startingDate": [self stringForDate:self.apiStartDate],
@@ -82,13 +84,14 @@
     
     if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start setPreapproval: %@", postParams);
     AFHTTPRequestOperation *operation = [manager POST:@"https://svcs.sandbox.paypal.com/AdaptivePayments/Preapproval" parameters:postParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
+        [self hideHUD];
         NSDictionary *result = [operation.responseString nvObject];
         apiPreapprovalKey = result[@"preapprovalKey"];
         [self openBrowser];
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  setPreapproval: %@", result);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self hideHUD];
         completionBlock(nil, error);
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error setPreapproval: %@", error);
     }];
@@ -115,8 +118,10 @@
     NSDictionary *postParams = @{@"preapprovalKey": self.apiPreapprovalKey,
                                  @"requestEnvelope.errorLanguage": @"en_US"};
     
+    [self showHUD:XBText(@"Getting information", @"XBPayment")];
     if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start getPreapproval: %@", postParams);
     AFHTTPRequestOperation *operation = [manager POST:@"https://svcs.sandbox.paypal.com/AdaptivePayments/PreapprovalDetails" parameters:postParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self hideHUD];
         
         NSDictionary *result = [operation.responseString nvObject];
         self.apiSenderEmail = result[@"senderEmail"];
@@ -124,6 +129,7 @@
         completionBlock(result, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self hideHUD];
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error getPreapproval: %@", error);
         completionBlock(nil, error);
     }];
@@ -147,6 +153,7 @@
         [manager.requestSerializer setValue:[XBPayment sharedInstance].apiAppID forHTTPHeaderField:@"X-PAYPAL-APPLICATION-ID"];
     }
     
+    [self showHUD:XBText(@"Capture payment", @"XBPayment")];
     NSDictionary *postParams = @{@"actionType": @"PAY",
                                  @"currencyCode": apiCurrency,
                                  @"feesPayer": @"EACHRECEIVER",
@@ -161,12 +168,14 @@
     
     if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start CapturePreapproval: %@", postParams);
     AFHTTPRequestOperation *operation = [manager POST:@"https://svcs.sandbox.paypal.com/AdaptivePayments/Pay" parameters:postParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self hideHUD];
         
         NSDictionary *result = [operation.responseString nvObject];
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  CapturePreapproval: %@", result);
         completion(result, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self hideHUD];
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error CapturePreapproval: %@", error);
         completion(nil, error);
     }];

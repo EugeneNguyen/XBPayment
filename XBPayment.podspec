@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBPayment"
-  s.version          = "0.4.1"
+  s.version          = "0.4.2"
   s.summary          = "XBPayment is a library support payment via paypal"
   s.description      = <<-DESC
                        XBPayment is a library support payment via paypal. Recently support Paypal's MEC - Mobile Express Checkout, Paypal's Pre-approval request
@@ -35,5 +35,6 @@ Integrated with PlusIgniter - PlusPayment already.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
+  s.dependency 'XBMobile'
 end

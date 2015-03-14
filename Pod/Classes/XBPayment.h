@@ -19,6 +19,7 @@
 
 @property (nonatomic, assign) BOOL isSandboxMode;
 @property (nonatomic, assign) BOOL isDebugMode;
+@property (nonatomic, assign) BOOL isShowHUD;
 
 @property (nonatomic, retain) NSString *brandname;
 
