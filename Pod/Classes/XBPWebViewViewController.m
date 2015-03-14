@@ -7,6 +7,7 @@
 //
 
 #import "XBPWebViewViewController.h"
+#import "XBMobile.h"
 
 @interface XBPWebViewViewController ()
 
@@ -31,6 +32,12 @@
     [super viewDidLoad];
     [webView loadRequest:[NSURLRequest requestWithURL:self.url]];
     webView.delegate = self.delegate;
+    [self showHUD:XBText(@"Loading", @"XBPayment")];
+}
+
+- (IBAction)didStopLoading:(id)sender
+{
+    [self hideHUD];
 }
 
 - (void)didReceiveMemoryWarning {

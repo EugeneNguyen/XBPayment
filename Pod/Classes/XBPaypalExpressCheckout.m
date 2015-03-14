@@ -266,6 +266,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
+    [self hideHUD];
     NSString *urlString = request.URL.absoluteString;
     if ([urlString rangeOfString:self.apiReturnURL].location != NSNotFound)
     {
