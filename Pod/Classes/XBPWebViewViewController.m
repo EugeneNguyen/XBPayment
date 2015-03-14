@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [webView loadRequest:[NSURLRequest requestWithURL:self.url]];
+    webView.delegate = self.delegate;
 }
 
 - (void)didReceiveMemoryWarning {
