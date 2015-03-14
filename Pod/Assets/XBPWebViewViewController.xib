@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBPWebViewViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Qll-7S-jWk"/>
+                <outlet property="webView" destination="fK6-oA-hED" id="ijA-tG-5B6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fK6-oA-hED">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="49I-Mb-AKC"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fK6-oA-hED" secondAttribute="bottom" id="Ele-xK-tXK"/>
+                <constraint firstItem="fK6-oA-hED" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F3R-lO-93E"/>
+                <constraint firstItem="fK6-oA-hED" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="af2-Si-I66"/>
+                <constraint firstAttribute="trailing" secondItem="fK6-oA-hED" secondAttribute="trailing" id="hbc-I8-qjb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="144" y="407"/>
+        </view>
+    </objects>
+</document>

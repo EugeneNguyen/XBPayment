@@ -23,6 +23,11 @@ static XBPayment *__sharedXBPayment = nil;
 @synthesize brandname;
 @synthesize host = _host;
 
++ (NSBundle *)bundle
+{
+    return [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"XBPayment" ofType:@"bundle"]];
+}
+
 - (id)init
 {
     self = [super init];

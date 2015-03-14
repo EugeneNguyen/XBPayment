@@ -230,7 +230,7 @@
     {
         url = [NSString stringWithFormat:@"https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=%@", self.apiToken];
     }
-    webBrowser = [[XBPWebViewViewController alloc] init];
+    webBrowser = [[XBPWebViewViewController alloc] initWithNibName:@"XBPWebViewViewController" bundle:[XBPayment bundle]];
     webBrowser.delegate = self;
     webBrowser.url = [NSURL URLWithString:url];
     if (isModal)

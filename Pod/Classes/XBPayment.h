@@ -32,6 +32,7 @@
 @property (nonatomic, retain) NSString *host;
 
 + (XBPayment *)sharedInstance;
++ (NSBundle *)bundle;
 - (NSDictionary *)params;
 
 @end
