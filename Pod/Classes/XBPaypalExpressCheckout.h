@@ -28,7 +28,10 @@ typedef void (^XBPPaypalExpressCheckoutCompletion)(NSDictionary *result, NSError
 @property (nonatomic, retain) NSString * apiSenderEmail;
 
 @property (nonatomic, assign) UIViewController * basedController;
+
+@property (nonatomic, assign) BOOL isUsingCreditcard;
 @property (nonatomic, assign) BOOL isModal;
+
 @property (nonatomic, retain) NSString * modalCloseTitle;
 
 @property (nonatomic, assign) XBPMethod method;

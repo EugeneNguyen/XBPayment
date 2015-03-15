@@ -24,6 +24,8 @@
 
 @implementation XBPaypalExpressCheckout
 
+@synthesize isUsingCreditcard;
+
 @synthesize apiCancelURL;
 @synthesize apiReturnURL;
 @synthesize apiToken;
@@ -74,7 +76,16 @@
     
     NSMutableDictionary *params = [@{@"METHOD": @"SetExpressCheckout",
                                      @"returnUrl": apiReturnURL,
-                                     @"cancelUrl": apiCancelURL} mutableCopy];
+                                     @"cancelUrl": apiCancelURL,
+                                     @"SOLUTIONTYPE": @"Sole"} mutableCopy];
+    if (isUsingCreditcard)
+    {
+        params[@"LANDINGPAGE"] = @"Billing";
+    }
+    else
+    {
+        params[@"LANDINGPAGE"] = @"Login";
+    }
     
     [params addEntriesFromDictionary:[[XBPayment sharedInstance] params]];
     
