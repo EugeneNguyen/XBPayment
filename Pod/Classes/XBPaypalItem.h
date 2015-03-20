@@ -24,6 +24,9 @@
 @property (nonatomic, retain) NSString *seller;
 @property (nonatomic, retain) NSString *paymentAction;
 
+@property (nonatomic, assign) int noShipping;
+@property (nonatomic, assign) BOOL allowNote;
+
 - (NSDictionary *)paramsForIndex:(int)index;
 
 @end

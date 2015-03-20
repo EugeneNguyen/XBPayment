@@ -19,6 +19,8 @@
 @synthesize seller;
 @synthesize paymentAction;
 @synthesize shippingfee;
+@synthesize allowNote;
+@synthesize noShipping;
 
 - (NSDictionary *)paramsForIndex:(int)index
 {
@@ -31,6 +33,9 @@
     
     [params setValue:@(_amount) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ITEMAMT", index]];
     [params setValue:@(shippingfee) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPPINGAMT", index]];
+    
+    [params setValue:@(noShipping) forKey:@"NOSHIPPING"];
+    [params setValue:@(allowNote) forKey:@"ALLOWNOTE"];
     
     if (quantity != 0)
     {
