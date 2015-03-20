@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *desc;
 @property (nonatomic, assign) float amount;
+@property (nonatomic, assign) float shippingfee;
 @property (nonatomic, assign) float taxAmount;
 @property (nonatomic, assign) float taxRate;
 @property (nonatomic, assign) float quantity;

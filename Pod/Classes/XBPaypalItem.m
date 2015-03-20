@@ -18,6 +18,7 @@
 @synthesize taxAmount;
 @synthesize seller;
 @synthesize paymentAction;
+@synthesize shippingfee;
 
 - (NSDictionary *)paramsForIndex:(int)index
 {
@@ -25,8 +26,11 @@
     
     [params setValue:name forKey:[NSString stringWithFormat:@"L_PAYMENTREQUEST_%d_NAME%d", index,index]];
     
-    [params setValue:@(_amount) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_AMT", index]];
+    [params setValue:@(_amount + shippingfee) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_AMT", index]];
     [params setValue:@(_amount) forKey:[NSString stringWithFormat:@"L_PAYMENTREQUEST_%d_AMT%d", index,index]];
+    
+    [params setValue:@(_amount) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ITEMAMT", index]];
+    [params setValue:@(shippingfee) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPPINGAMT", index]];
     
     if (quantity != 0)
     {
