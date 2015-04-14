@@ -27,6 +27,20 @@
 @property (nonatomic, assign) int noShipping;
 @property (nonatomic, assign) BOOL allowNote;
 
+// Address
+
+@property (nonatomic, retain) NSString *shipToName;
+@property (nonatomic, retain) NSString *shipToStreet;
+@property (nonatomic, retain) NSString *shipToStreet2;
+@property (nonatomic, retain) NSString *shipToCity;
+@property (nonatomic, retain) NSString *shipToState;
+@property (nonatomic, retain) NSString *shipToZip;
+@property (nonatomic, retain) NSString *shipToCountryCode;
+@property (nonatomic, retain) NSString *shipToCountryName;
+@property (nonatomic, retain) NSString *shipToPhoneNumber;
+@property (nonatomic, retain) NSString *shipToAddressStatus;
+@property (nonatomic, retain) NSString *shipToAddressNormalizationStatus;
+
 - (NSDictionary *)paramsForIndex:(int)index;
 
 @end
