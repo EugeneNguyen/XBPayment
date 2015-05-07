@@ -1,5 +1,5 @@
 
- //
+//
 //  XBPaypalExpressCheckout.m
 //  Pods
 //
@@ -134,6 +134,7 @@
         NSDictionary *result = [operation.responseString nvObject];
         if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  GetExpressCheckout: %@", result);
         self.apiSenderEmail = result[@"EMAIL"];
+        self.apiPayerID = result[@"PAYERID"];
         completionBlock(result, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self hideHUD];
@@ -202,18 +203,18 @@
     
     [params addEntriesFromDictionary:[[XBPayment sharedInstance] params]];
     
-    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start SetExpressCheckout Billing: %@", params);
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start startSetMECBillingAgreement Billing: %@", params);
     [self showHUD:XBText(@"Preparing", @"XBPayment")];
     AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self hideHUD];
         NSDictionary *result = [operation.responseString nvObject];
-        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  SetExpressCheckout Billing: %@", result);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  startSetMECBillingAgreement Billing: %@", result);
         self.apiToken = result[@"TOKEN"];
         [self openBrowser];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self hideHUD];
         completionBlock(nil, error);
-        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error SetExpressCheckout Billing: %@", error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error startSetMECBillingAgreement Billing: %@", error);
     }];
     
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
@@ -228,19 +229,19 @@
     
     [params addEntriesFromDictionary:[[XBPayment sharedInstance] params]];
     
-    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start DoExpressCheckout Billing: %@", params);
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start startDoMECBillingAgreement Billing: %@", params);
     
     [self showHUD:XBText(@"Performing", @"XBPayment")];
     AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self hideHUD];
         NSDictionary *result = [operation.responseString nvObject];
-        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  DoExpressCheckout Billing: %@", result);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  startDoMECBillingAgreement Billing: %@", result);
         self.apiBillingAgreementID = result[@"BILLINGAGREEMENTID"];
         [self startGetExpressCheckoutDetails];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self hideHUD];
         completionBlock(nil, error);
-        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error DoExpressCheckout Billing: %@", error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error startDoMECBillingAgreement Billing: %@", error);
     }];
     
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
