@@ -247,6 +247,32 @@
     operation.responseSerializer = [AFCompoundResponseSerializer serializer];
 }
 
+- (void)cancelBillingAgreementWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSMutableDictionary *params = [@{@"METHOD": @"BillAgreementUpdate",
+                                     @"REFERENCEID": self.apiBillingAgreementID,
+                                     @"BILLINGAGREEMENTSTATUS": @"Canceled",
+                                     @"BILLINGAGREEMENTDESCRIPTION": @"Cancel billing agreement with 99closets"} mutableCopy];
+    
+    [params addEntriesFromDictionary:[[XBPayment sharedInstance] params]];
+    if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Start cancelMECBillingAgreement Billing: %@", params);
+    
+    [self showHUD:XBText(@"Performing", @"XBPayment")];
+    AFHTTPRequestOperation *operation = [manager POST:[self serviceURL] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self hideHUD];
+        NSDictionary *result = [operation.responseString nvObject];
+        completion(result, operation.error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Done  cancelMECBillingAgreement Billing: %@", result);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        completionBlock(nil, error);
+        if ([XBPayment sharedInstance].isDebugMode) NSLog(@"Error cancelMECBillingAgreement Billing: %@", error);
+    }];
+    
+    operation.responseSerializer = [AFCompoundResponseSerializer serializer];
+}
+
 - (void)openBrowser
 {
     NSString *url;

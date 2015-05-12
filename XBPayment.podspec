@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "XBPayment"
-  s.version          = "0.5.3.3"
+  s.version          = "0.5.4"
   s.summary          = "XBPayment is a library support payment via paypal"
   s.description      = <<-DESC
                        XBPayment is a library support payment via paypal. Recently support Paypal's MEC - Mobile Express Checkout, Paypal's Pre-approval request

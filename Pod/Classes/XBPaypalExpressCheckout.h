@@ -48,5 +48,6 @@ typedef void (^XBPPaypalExpressCheckoutCompletion)(NSDictionary *result, NSError
 - (void)startBillingAgreementWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion;
 - (void)startSetMECBillingAgreement;
 - (void)startDoMECBillingAgreement;
+- (void)cancelBillingAgreementWithCompletionBlock:(XBPPaypalExpressCheckoutCompletion)completion;
 
 @end
