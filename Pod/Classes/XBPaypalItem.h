@@ -41,6 +41,8 @@
 @property (nonatomic, retain) NSString *shipToAddressStatus;
 @property (nonatomic, retain) NSString *shipToAddressNormalizationStatus;
 
+@property (nonatomic, assign) float addressOverride;
+
 - (NSDictionary *)paramsForIndex:(int)index;
 
 @end

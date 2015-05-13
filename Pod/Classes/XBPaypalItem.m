@@ -33,6 +33,7 @@
 @synthesize shipToAddressStatus;
 @synthesize shipToAddressNormalizationStatus;
 @synthesize shipToZip;
+@synthesize addressOverride;
 
 - (NSDictionary *)paramsForIndex:(int)index
 {
@@ -48,6 +49,7 @@
     
     [params setValue:@(noShipping) forKey:@"NOSHIPPING"];
     [params setValue:@(allowNote) forKey:@"ALLOWNOTE"];
+    [params setValue:@(self.addressOverride) forKey:@"ADDROVERRIDE"];
     
     if (quantity != 0)
     {
