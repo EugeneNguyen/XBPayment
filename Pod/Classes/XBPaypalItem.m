@@ -8,6 +8,13 @@
 
 #import "XBPaypalItem.h"
 
+@interface XBPaypalItem ()
+{
+    NSMutableDictionary *params;
+}
+
+@end
+
 @implementation XBPaypalItem
 @synthesize name;
 @synthesize desc;
@@ -37,15 +44,17 @@
 
 - (NSDictionary *)paramsForIndex:(int)index
 {
-    NSMutableDictionary *params = [@{} mutableCopy];
+    params = [@{} mutableCopy];
     
     [params setValue:name forKey:[NSString stringWithFormat:@"L_PAYMENTREQUEST_%d_NAME%d", index,index]];
+    [self setNotNullValue:desc forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_DESC", index]];
     
     [params setValue:@(_amount + shippingfee) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_AMT", index]];
     [params setValue:@(_amount) forKey:[NSString stringWithFormat:@"L_PAYMENTREQUEST_%d_AMT%d", index,index]];
     
     [params setValue:@(_amount) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ITEMAMT", index]];
     [params setValue:@(shippingfee) forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPPINGAMT", index]];
+    [params setValue:currency forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_CURRENCYCODE", index]];
     
     [params setValue:@(noShipping) forKey:@"NOSHIPPING"];
     [params setValue:@(allowNote) forKey:@"ALLOWNOTE"];
@@ -56,71 +65,31 @@
         [params setValue:@(quantity) forKey:[NSString stringWithFormat:@"L_PAYMENTREQUEST_%d_QTY%d", index,index]];
     }
     
-    if (seller)
-    {
-        [params setValue:seller forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SELLERPAYPALACCOUNTID", index]];
-    }
+    [self setNotNullValue:seller forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SELLERPAYPALACCOUNTID", index]];
+    [self setNotNullValue:paymentAction forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_PAYMENTACTION", index]];
+    [self setNotNullValue:shipToName forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTONAME", index]];
+    [self setNotNullValue:shipToStreet forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOSTREET", index]];
+    [self setNotNullValue:shipToStreet2 forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOSTREET2", index]];
+    [self setNotNullValue:shipToCity forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOCITY", index]];
+    [self setNotNullValue:shipToState forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOSTATE", index]];
+    [self setNotNullValue:shipToZip forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOZIP", index]];
+    [self setNotNullValue:shipToCountryCode forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOCOUNTRYCODE", index]];
+    [self setNotNullValue:shipToCountryName forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOCOUNTRYNAME", index]];
+    [self setNotNullValue:shipToPhoneNumber forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOPHONENUM", index]];
+    [self setNotNullValue:shipToAddressStatus forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ADDRESSSTATUS", index]];
+    [self setNotNullValue:shipToAddressNormalizationStatus forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ADDRESSNORMALIZATIONSTATUS", index]];
     
-    if (paymentAction)
-    {
-        [params setValue:paymentAction forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_PAYMENTACTION", index]];
-    }
     
-    // address
-    
-    if (shipToName)
-    {
-        [params setValue:shipToName forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTONAME", index]];
-    }
-    
-    if (shipToStreet)
-    {
-        [params setValue:shipToStreet forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOSTREET", index]];
-    }
-    
-    if (shipToStreet2)
-    {
-        [params setValue:shipToStreet2 forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOSTREET2", index]];
-    }
-    
-    if (shipToCity)
-    {
-        [params setValue:shipToCity forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOCITY", index]];
-    }
-    
-    if (shipToState)
-    {
-        [params setValue:shipToState forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOSTATE", index]];
-    }
-    
-    if (shipToZip)
-    {
-        [params setValue:shipToZip forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOZIP", index]];
-    }
-    
-    if (shipToCountryCode)
-    {
-        [params setValue:shipToCountryCode forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOCOUNTRYCODE", index]];
-    }
-    
-    if (shipToCountryName)
-    {
-        [params setValue:shipToCountryName forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOCOUNTRYNAME", index]];
-    }
-    if (shipToPhoneNumber)
-    {
-        [params setValue:shipToPhoneNumber forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_SHIPTOPHONENUM", index]];
-    }
-    if (shipToAddressStatus)
-    {
-        [params setValue:shipToAddressStatus forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ADDRESSSTATUS", index]];
-    }
-    if (shipToAddressNormalizationStatus)
-    {
-        [params setValue:shipToAddressNormalizationStatus forKey:[NSString stringWithFormat:@"PAYMENTREQUEST_%d_ADDRESSNORMALIZATIONSTATUS", index]];
-    }
     
     return params;
+}
+
+- (void)setNotNullValue:(id)object forKey:(NSString *)key
+{
+    if (object)
+    {
+        [params setValue:object forKey:key];
+    }
 }
 
 @end
